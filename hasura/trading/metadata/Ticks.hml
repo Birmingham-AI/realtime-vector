@@ -1,0 +1,168 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Ticks
+  fields:
+    - name: createdAt
+      type: Timestamptz!
+    - name: id
+      type: Int4!
+    - name: price
+      type: Numeric!
+    - name: symbol
+      type: Varchar!
+    - name: tickTime
+      type: Timestamptz!
+    - name: traderId
+      type: Int4
+    - name: volume
+      type: Int4!
+  graphql:
+    typeName: Trading_Ticks
+    inputTypeName: Trading_TicksInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: timescale
+      dataConnectorObjectType: ticks
+      fieldMapping:
+        createdAt:
+          column:
+            name: created_at
+        id:
+          column:
+            name: id
+        price:
+          column:
+            name: price
+        symbol:
+          column:
+            name: symbol
+        tickTime:
+          column:
+            name: tick_time
+        traderId:
+          column:
+            name: trader_id
+        volume:
+          column:
+            name: volume
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Ticks
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - createdAt
+          - id
+          - price
+          - symbol
+          - tickTime
+          - traderId
+          - volume
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: TicksBoolExp
+  objectType: Ticks
+  dataConnectorName: timescale
+  dataConnectorObjectType: ticks
+  comparableFields:
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: price
+      operators:
+        enableAll: true
+    - fieldName: symbol
+      operators:
+        enableAll: true
+    - fieldName: tickTime
+      operators:
+        enableAll: true
+    - fieldName: traderId
+      operators:
+        enableAll: true
+    - fieldName: volume
+      operators:
+        enableAll: true
+  graphql:
+    typeName: Trading_TicksBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Ticks
+  objectType: Ticks
+  source:
+    dataConnectorName: timescale
+    collection: ticks
+  filterExpressionType: TicksBoolExp
+  orderableFields:
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: price
+      orderByDirections:
+        enableAll: true
+    - fieldName: symbol
+      orderByDirections:
+        enableAll: true
+    - fieldName: tickTime
+      orderByDirections:
+        enableAll: true
+    - fieldName: traderId
+      orderByDirections:
+        enableAll: true
+    - fieldName: volume
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: trading_ticks
+    selectUniques:
+      - queryRootField: trading_ticksById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: Trading_TicksOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Ticks
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: trader
+  sourceType: Ticks
+  target:
+    model:
+      name: Trader
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: traderId
+      target:
+        modelField:
+          - fieldName: id
+

@@ -1,0 +1,8 @@
+kind: Connector
+version: v1
+definition:
+  name: timescale
+  subgraph: trading
+  source: hasura/postgres:v1.0.0
+  context: .
+  envFile: .env.cloud

@@ -1,0 +1,129 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Stock
+  fields:
+    - name: createdAt
+      type: Timestamptz!
+    - name: id
+      type: Int4!
+    - name: name
+      type: Varchar!
+    - name: sector
+      type: Varchar
+    - name: symbol
+      type: Varchar!
+  graphql:
+    typeName: Trading_Stock
+    inputTypeName: Trading_StockInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: timescale
+      dataConnectorObjectType: stock
+      fieldMapping:
+        createdAt:
+          column:
+            name: created_at
+        id:
+          column:
+            name: id
+        name:
+          column:
+            name: name
+        sector:
+          column:
+            name: sector
+        symbol:
+          column:
+            name: symbol
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Stock
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - createdAt
+          - id
+          - name
+          - sector
+          - symbol
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: StockBoolExp
+  objectType: Stock
+  dataConnectorName: timescale
+  dataConnectorObjectType: stock
+  comparableFields:
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+    - fieldName: sector
+      operators:
+        enableAll: true
+    - fieldName: symbol
+      operators:
+        enableAll: true
+  graphql:
+    typeName: Trading_StockBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Stock
+  objectType: Stock
+  source:
+    dataConnectorName: timescale
+    collection: stock
+  filterExpressionType: StockBoolExp
+  orderableFields:
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+    - fieldName: sector
+      orderByDirections:
+        enableAll: true
+    - fieldName: symbol
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: trading_stock
+    selectUniques:
+      - queryRootField: trading_stockById
+        uniqueIdentifier:
+          - id
+      - queryRootField: trading_stockBySymbol
+        uniqueIdentifier:
+          - symbol
+    orderByExpressionType: Trading_StockOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Stock
+  permissions:
+    - role: admin
+      select:
+        filter: null
+

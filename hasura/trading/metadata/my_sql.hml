@@ -1,0 +1,374 @@
+kind: DataConnectorLink
+version: v1
+definition:
+  name: my_sql
+  url:
+    readWriteUrls:
+      read:
+        valueFromEnv: TRADING_MY_SQL_READ_URL
+      write:
+        valueFromEnv: TRADING_MY_SQL_WRITE_URL
+  schema:
+    version: v0.1
+    schema:
+      scalar_types:
+        BOOLEAN:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+        DATE:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              type: custom
+              argument_type:
+                type: named
+                name: DATE
+            _gte:
+              type: custom
+              argument_type:
+                type: named
+                name: DATE
+            _lt:
+              type: custom
+              argument_type:
+                type: named
+                name: DATE
+            _lte:
+              type: custom
+              argument_type:
+                type: named
+                name: DATE
+        DATETIME:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              type: custom
+              argument_type:
+                type: named
+                name: DATETIME
+            _gte:
+              type: custom
+              argument_type:
+                type: named
+                name: DATETIME
+            _lt:
+              type: custom
+              argument_type:
+                type: named
+                name: DATETIME
+            _lte:
+              type: custom
+              argument_type:
+                type: named
+                name: DATETIME
+        FLOAT:
+          aggregate_functions:
+            avg:
+              result_type:
+                type: named
+                name: FLOAT
+            count:
+              result_type:
+                type: named
+                name: INT
+            max:
+              result_type:
+                type: named
+                name: FLOAT
+            min:
+              result_type:
+                type: named
+                name: FLOAT
+            stddev_pop:
+              result_type:
+                type: named
+                name: FLOAT
+            stddev_samp:
+              result_type:
+                type: named
+                name: FLOAT
+            sum:
+              result_type:
+                type: named
+                name: FLOAT
+            var_pop:
+              result_type:
+                type: named
+                name: FLOAT
+            var_samp:
+              result_type:
+                type: named
+                name: FLOAT
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              type: custom
+              argument_type:
+                type: named
+                name: FLOAT
+            _gte:
+              type: custom
+              argument_type:
+                type: named
+                name: FLOAT
+            _in:
+              type: in
+            _lt:
+              type: custom
+              argument_type:
+                type: named
+                name: FLOAT
+            _lte:
+              type: custom
+              argument_type:
+                type: named
+                name: FLOAT
+        INT:
+          aggregate_functions:
+            avg:
+              result_type:
+                type: named
+                name: FLOAT
+            count:
+              result_type:
+                type: named
+                name: INT
+            max:
+              result_type:
+                type: named
+                name: INT
+            min:
+              result_type:
+                type: named
+                name: INT
+            stddev_pop:
+              result_type:
+                type: named
+                name: FLOAT
+            stddev_samp:
+              result_type:
+                type: named
+                name: FLOAT
+            sum:
+              result_type:
+                type: named
+                name: INT
+            var_pop:
+              result_type:
+                type: named
+                name: FLOAT
+            var_samp:
+              result_type:
+                type: named
+                name: FLOAT
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              type: custom
+              argument_type:
+                type: named
+                name: INT
+            _gte:
+              type: custom
+              argument_type:
+                type: named
+                name: INT
+            _in:
+              type: in
+            _lt:
+              type: custom
+              argument_type:
+                type: named
+                name: INT
+            _lte:
+              type: custom
+              argument_type:
+                type: named
+                name: INT
+        STRING:
+          aggregate_functions:
+            max:
+              result_type:
+                type: named
+                name: STRING
+            min:
+              result_type:
+                type: named
+                name: STRING
+          comparison_operators:
+            _contains:
+              type: custom
+              argument_type:
+                type: named
+                name: STRING
+            _eq:
+              type: equal
+            _like:
+              type: custom
+              argument_type:
+                type: named
+                name: STRING
+        TIME:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              type: custom
+              argument_type:
+                type: named
+                name: TIME
+            _gte:
+              type: custom
+              argument_type:
+                type: named
+                name: TIME
+            _lt:
+              type: custom
+              argument_type:
+                type: named
+                name: TIME
+            _lte:
+              type: custom
+              argument_type:
+                type: named
+                name: TIME
+      object_types:
+        trading_db.orders:
+          description: ""
+          fields:
+            id:
+              description: ""
+              type:
+                type: named
+                name: INT
+              arguments: {}
+            order_time:
+              description: ""
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: DATETIME_WITH_TIMEZONE
+              arguments: {}
+            order_type:
+              description: ""
+              type:
+                type: named
+                name: STRING
+              arguments: {}
+            price:
+              description: ""
+              type:
+                type: named
+                name: FLOAT
+              arguments: {}
+            quantity:
+              description: ""
+              type:
+                type: named
+                name: INT
+              arguments: {}
+            symbol:
+              description: ""
+              type:
+                type: named
+                name: STRING
+              arguments: {}
+            trader_id:
+              description: ""
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: INT
+              arguments: {}
+        trading_db.portfolio:
+          description: ""
+          fields:
+            average_price:
+              description: ""
+              type:
+                type: named
+                name: FLOAT
+              arguments: {}
+            bio:
+              description: ""
+              type:
+                type: named
+                name: STRING
+              arguments: {}
+            id:
+              description: ""
+              type:
+                type: named
+                name: INT
+              arguments: {}
+            last_updated:
+              description: ""
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: DATETIME_WITH_TIMEZONE
+              arguments: {}
+            quantity:
+              description: ""
+              type:
+                type: named
+                name: INT
+              arguments: {}
+            symbol:
+              description: ""
+              type:
+                type: named
+                name: STRING
+              arguments: {}
+            trader_id:
+              description: ""
+              type:
+                type: nullable
+                underlying_type:
+                  type: named
+                  name: INT
+              arguments: {}
+      collections:
+        - name: trading_db.orders
+          description: ""
+          arguments: {}
+          type: trading_db.orders
+          uniqueness_constraints:
+            trading_db.orders_PK:
+              unique_columns:
+                - id
+          foreign_keys: {}
+        - name: trading_db.portfolio
+          description: ""
+          arguments: {}
+          type: trading_db.portfolio
+          uniqueness_constraints:
+            trading_db.portfolio_PK:
+              unique_columns:
+                - id
+          foreign_keys: {}
+      functions: []
+      procedures: []
+    capabilities:
+      version: 0.1.2
+      capabilities:
+        query:
+          aggregates: {}
+          variables: {}
+          explain: {}
+        mutation: {}
+        relationships:
+          relation_comparisons: {}
+          order_by_aggregate: {}

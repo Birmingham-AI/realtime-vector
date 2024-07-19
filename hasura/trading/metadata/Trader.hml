@@ -1,0 +1,135 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Trader
+  fields:
+    - name: createdAt
+      type: Timestamptz!
+    - name: email
+      type: Varchar!
+    - name: id
+      type: Int4!
+    - name: name
+      type: Varchar!
+  graphql:
+    typeName: Trading_Trader
+    inputTypeName: Trading_TraderInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: timescale
+      dataConnectorObjectType: trader
+      fieldMapping:
+        createdAt:
+          column:
+            name: created_at
+        email:
+          column:
+            name: email
+        id:
+          column:
+            name: id
+        name:
+          column:
+            name: name
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Trader
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - createdAt
+          - email
+          - id
+          - name
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: TraderBoolExp
+  objectType: Trader
+  dataConnectorName: timescale
+  dataConnectorObjectType: trader
+  comparableFields:
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: email
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+  graphql:
+    typeName: Trading_TraderBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Trader
+  objectType: Trader
+  source:
+    dataConnectorName: timescale
+    collection: trader
+  filterExpressionType: TraderBoolExp
+  orderableFields:
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: email
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: trading_trader
+    selectUniques:
+      - queryRootField: trading_traderByEmail
+        uniqueIdentifier:
+          - email
+      - queryRootField: trading_traderById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: Trading_TraderOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Trader
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: ticks
+  sourceType: Trader
+  target:
+    model:
+      name: Ticks
+      relationshipType: Array
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: id
+      target:
+        modelField:
+          - fieldName: traderId
+

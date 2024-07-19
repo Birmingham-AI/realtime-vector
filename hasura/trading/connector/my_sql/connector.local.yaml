@@ -1,0 +1,8 @@
+kind: Connector
+version: v1
+definition:
+  name: my_sql
+  subgraph: trading
+  source: hasura/mysql:v0.1.0
+  context: .
+  envFile: .env.local
