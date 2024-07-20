@@ -166,3 +166,21 @@ definition:
         modelField:
           - fieldName: id
 
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: stock
+  sourceType: Ticks
+  target:
+    model:
+      name: Stock
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: symbol
+      target:
+        modelField:
+          - fieldName: symbol
