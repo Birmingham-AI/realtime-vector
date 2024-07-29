@@ -1,6 +1,13 @@
 services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
   timescaledb:
-    image: timescale/timescaledb:latest-pg14
+    image: timescale/timescaledb:latest-pg16
     ports:
       - "5432:5432"
     environment:
@@ -10,6 +17,8 @@ services:
     volumes:
       - timescale_data:/var/lib/postgresql/data
       - ./init-scripts/timescaledb:/docker-entrypoint-initdb.d
+    depends_on:
+      - ollama
 
   mysql:
     image: mysql:latest
@@ -25,5 +34,6 @@ services:
       - ./init-scripts/mysql:/docker-entrypoint-initdb.d
 
 volumes:
+  ollama_data:
   timescale_data:
   mysql_data:
