@@ -13,27 +13,31 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: trading_db
+      POSTGRES_DB: changelog_db
     volumes:
       - timescale_data:/var/lib/postgresql/data
       - ./init-scripts/timescaledb:/docker-entrypoint-initdb.d
     depends_on:
       - ollama
 
-  mysql:
-    image: mysql:latest
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
     ports:
-      - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: trading_db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      - "27017:27017"
     volumes:
-      - mysql_data:/var/lib/mysql
-      - ./init-scripts/mysql:/docker-entrypoint-initdb.d
+      - mongo_data:/data/db
+
+  mongo-seed:
+    build:
+      context: ./init-scripts/mongodb/
+      dockerfile: Dockerfile
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
 
 volumes:
   ollama_data:
   timescale_data:
-  mysql_data:
+  mongo_data:

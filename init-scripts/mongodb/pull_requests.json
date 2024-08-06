@@ -1,0 +1,2830 @@
+[
+  {
+    "3": {
+      "commits": [
+        {
+          "hash": "3c1a9c61f52d92404b04134cb468653c3e244160",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-02-06 08:26:17.607709"
+        },
+        {
+          "hash": "eab8feb0ff0b0f587a3ece6cef7dfaa1af2a7b35",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2022-11-25 04:43:13.644596"
+        },
+        {
+          "hash": "b6cb6748363744bc2ba2b3c073c84cb5f70df58a",
+          "message": "Added support for new user roles",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2024-04-04 05:32:02.929781"
+        },
+        {
+          "hash": "ffb5a5d8178cf44e06c2adaa9d5673cae5e8a454",
+          "message": "Enhanced UI for better user experience",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2022-05-06 23:48:23.026612"
+        },
+        {
+          "hash": "377e4c7e1390888adbb90d43e969714a1b7a5326",
+          "message": "Resolved issue with session management",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-07-06 01:35:19.133940"
+        },
+        {
+          "hash": "f691812e7e2199b93b7ca1127dca4d168f8e2902",
+          "message": "Fixed typo in error messages",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2022-09-02 12:31:18.145990"
+        },
+        {
+          "hash": "f1995e88c3e2bfbd0e5169314363ff43e0708638",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-10-22 13:13:11.721944"
+        },
+        {
+          "hash": "276ccc38bca826b128fdc8ab58c4444e2e95466c",
+          "message": "Updated API responses for consistency",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-02-14 03:51:48.724910"
+        },
+        {
+          "hash": "86b6585e9e0b15aa2b3abf8e5e0c5ea648212378",
+          "message": "Added logging for debugging purposes",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-06-04 22:25:36.101662"
+        },
+        {
+          "hash": "5cf28ad837d1944ff406862a6eece33b65faf745",
+          "message": "Refactored user profile module",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2024-07-31 01:33:07.028665"
+        },
+        {
+          "hash": "53a7faac3336b6eaecdea569d7048162542d6d53",
+          "message": "Updated API responses for consistency",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-01-14 12:49:50.617717"
+        },
+        {
+          "hash": "8b948e634bf297b91a82a73350dfaea276e4fd9c",
+          "message": "Fixed bug in authentication logic",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2024-06-02 07:05:58.035665"
+        },
+        {
+          "hash": "28a7fd387fbd31d3582dd6dcec773a98935e1d03",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2024-07-07 16:22:52.436606"
+        },
+        {
+          "hash": "7b98753fc7e8c0782f163a944172a6cb25f6c896",
+          "message": "Added support for new user roles",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-04-21 17:59:11.400065"
+        },
+        {
+          "hash": "b2806923810ae8e3554aa9c449c76cd9807f9583",
+          "message": "Optimized database queries for performance",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-08-09 22:52:44.750449"
+        },
+        {
+          "hash": "5767f7c84810b7c6da73de843cd1336cf157bae6",
+          "message": "Revised documentation for setup instructions",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-07-24 06:43:11.354405"
+        },
+        {
+          "hash": "fe9fa349a2af45a1f637e585ce84cfe2fb916de1",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-11-10 19:57:48.391544"
+        },
+        {
+          "hash": "98942bba71b9ee8de5c70db69e923c82e07829f3",
+          "message": "Implemented new payment gateway integration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2024-04-17 09:33:31.797611"
+        },
+        {
+          "hash": "19620c15a6b6fc061b70ce2c9fa2ee6b487802dd",
+          "message": "Fixed typo in error messages",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2022-11-17 04:49:04.053338"
+        },
+        {
+          "hash": "6e0169f80afb6ead9373b2f3d46000d7b557654e",
+          "message": "Added unit tests for new features",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-02-05 14:27:12.517784"
+        },
+        {
+          "hash": "e0a3ad6114baadba7efdeb28d2eb6e3a96f5529d",
+          "message": "Improved security for data storage",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-07-25 13:55:44.688483"
+        },
+        {
+          "hash": "1d29660838f2f12c2ea34cee8f738f6ae34d2378",
+          "message": "Enhanced UI for better user experience",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-06-02 02:04:32.050294"
+        },
+        {
+          "hash": "975c909c6da59cc69f9e78f5b08a6ff345f3bc01",
+          "message": "Resolved issue with session management",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2024-04-18 01:07:16.249877"
+        },
+        {
+          "hash": "1bb7b6a96f3b48043f54ae031606976d40c93485",
+          "message": "Enhanced UI for better user experience",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2022-02-01 11:20:59.453825"
+        },
+        {
+          "hash": "791e35ed9ecb0eb2cfcc4cfa789b2dd7376e324a",
+          "message": "Implemented new payment gateway integration",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-04-13 09:54:58.713044"
+        },
+        {
+          "hash": "b98b571f0513df19f54223e9e69d2ca1ec1ae4f7",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-11-19 12:04:50.044131"
+        },
+        {
+          "hash": "553c1194c827b2a7634e99fb556e69923697a626",
+          "message": "Added unit tests for new features",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2024-03-28 14:08:05.443272"
+        },
+        {
+          "hash": "165c44bb5ded2b491c0016b59cc6065169985410",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-03-11 14:24:21.100181"
+        },
+        {
+          "hash": "6a314e5ca00b1f95a16d5478db3c27f9a54784c1",
+          "message": "Implemented new payment gateway integration",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-03-19 14:30:23.103164"
+        },
+        {
+          "hash": "b22fad5980206eafbe7059b377ff171bdf4e20fa",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-02-25 06:14:10.444540"
+        },
+        {
+          "hash": "4f39dc9037d11c60ad2954cbea764440d5f57e8f",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-11-05 09:22:36.549595"
+        },
+        {
+          "hash": "02da2fc11723ddf7c2fe5192bd02d3f752bf4274",
+          "message": "Improved security for data storage",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2022-06-03 05:28:30.266866"
+        },
+        {
+          "hash": "f07ddc925f8a4f371c70c04c038c0f503d1597f8",
+          "message": "Improved error handling in API endpoints",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-04-25 09:21:13.970158"
+        },
+        {
+          "hash": "25e723dcb961f44eee1b9c2d64dd5803e38143a2",
+          "message": "Implemented new payment gateway integration",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-06-30 19:02:27.592526"
+        },
+        {
+          "hash": "d7673e28d983e712aefd41b58365efaa3d8ff4a8",
+          "message": "Revised documentation for setup instructions",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-05-10 11:58:15.649319"
+        },
+        {
+          "hash": "c601f6c1ce12f7a698ee8ac81ce3dbeaa64ffdd8",
+          "message": "Improved security for data storage",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-05-16 17:39:14.450756"
+        },
+        {
+          "hash": "60ea7f8f161bdd7326d4c74d1419b3b72808e3c5",
+          "message": "Refactored user profile module",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-08-20 06:55:53.777174"
+        },
+        {
+          "hash": "9aa0957fd3e33efe88a19cea84d55eb89c622627",
+          "message": "Resolved issue with session management",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-03-24 14:49:10.538265"
+        },
+        {
+          "hash": "a82481e76091dff44a2c869128a796869b8e0147",
+          "message": "Fixed typo in error messages",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-11-01 02:45:04.742341"
+        },
+        {
+          "hash": "829d0863b8adbb8cadf1ef800daa92b44b519d2f",
+          "message": "Fixed bug in authentication logic",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-12-27 22:10:28.872410"
+        },
+        {
+          "hash": "d0fc8cd959265c219a1e635b01c7754564ea3a5c",
+          "message": "Fixed typo in error messages",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2022-10-09 20:07:01.758937"
+        },
+        {
+          "hash": "0f965dae276363ab776d9121575e4e0dd4196a15",
+          "message": "Resolved issue with session management",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-04-12 14:25:01.962346"
+        },
+        {
+          "hash": "15c9278974cca7afb581126cda226becaed2db8d",
+          "message": "Added support for new user roles",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2022-01-02 19:44:29.771209"
+        },
+        {
+          "hash": "3159d0c8f332d3ffb1c1241631ecf2bbded8c64a",
+          "message": "Enhanced UI for better user experience",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-02-18 05:49:32.242932"
+        },
+        {
+          "hash": "1470cb9378badbac91e60d2c110ab5f906e96956",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-02-15 22:47:29.982559"
+        },
+        {
+          "hash": "966ee5a0c134bf98fbec30e59f9cdef6c4579567",
+          "message": "Added logging for debugging purposes",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-07-25 11:35:45.837650"
+        },
+        {
+          "hash": "768ab423efbde6567263909cedee1f9bb693b441",
+          "message": "Fixed typo in error messages",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2024-02-19 00:08:56.651087"
+        },
+        {
+          "hash": "8db23a91179556c05682e61799f022c51b76eb66",
+          "message": "Improved error handling in API endpoints",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-10-19 08:26:42.537661"
+        },
+        {
+          "hash": "2c04cf4683298b18a5e0775fb11372546ae4ba66",
+          "message": "Improved error handling in API endpoints",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2023-10-15 15:45:56.857067"
+        },
+        {
+          "hash": "4f4b8d2a49783f0e076a6bdb9c93818687dcf5b6",
+          "message": "Optimized database queries for performance",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2024-05-21 09:29:48.215338"
+        },
+        {
+          "hash": "c79450c06fd17f1ff1a142251063d328d51b5c43",
+          "message": "Resolved issue with session management",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-06-21 21:07:10.613070"
+        },
+        {
+          "hash": "ec570966ae0a8f4e26285cba6b803a258ee588eb",
+          "message": "Implemented new payment gateway integration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-12-27 13:48:29.751558"
+        },
+        {
+          "hash": "620b73741ac40a0e4266211f4942f51e03bd841a",
+          "message": "Refactored user profile module",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2022-03-02 11:12:18.649818"
+        },
+        {
+          "hash": "5acb2cd14c4e5691135b0e9321db9e1d3193e6a7",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-04-11 12:51:29.678288"
+        },
+        {
+          "hash": "37b26a64580550fbf201011cd7d7a059fa698969",
+          "message": "Fixed bug in authentication logic",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-08-25 04:23:32.912050"
+        },
+        {
+          "hash": "966783b60a0278d75ff80a3b9bff96fbcf8c6cad",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-04-13 09:59:46.667605"
+        },
+        {
+          "hash": "911431404d5eeaba6db6f4f5e1cb2b3d9f095f57",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-05-04 07:43:41.313108"
+        },
+        {
+          "hash": "4e9d4b33bed4650d03caf462f9e8858066be2de4",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-01-07 12:45:54.643200"
+        },
+        {
+          "hash": "ad9efcfa0e7a877f6048072e231573290f7276d1",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-05-24 19:16:57.641218"
+        },
+        {
+          "hash": "d64038079401c2a65356d2d2605b2a576fbcd2da",
+          "message": "Improved security for data storage",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-02-08 17:28:10.535831"
+        },
+        {
+          "hash": "663e26b7aacf21c48b04ec4578e4cebbb1207fa0",
+          "message": "Added support for new user roles",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-02-01 11:56:51.022359"
+        },
+        {
+          "hash": "016c767a28b38b56e910bccd794133378c1802b9",
+          "message": "Updated API responses for consistency",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2024-06-04 19:59:30.920962"
+        },
+        {
+          "hash": "ccabbf4b57c338c795955446b5d29fc06ad3d9d2",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-03-28 17:14:16.827941"
+        },
+        {
+          "hash": "b22092cfe08a9543e5af1c02bb207618a5cfaa67",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-05-30 23:32:21.229900"
+        },
+        {
+          "hash": "e510fd2b10718bc24c4f31f1070f4509f04a5978",
+          "message": "Fixed typo in error messages",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-05-12 01:36:32.735927"
+        },
+        {
+          "hash": "502c8b737bad8bb7e23c44c66a9cc431a25c906e",
+          "message": "Improved security for data storage",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2024-02-19 00:22:39.328310"
+        },
+        {
+          "hash": "67f56cdba1f418d1d46ae53d02b504759e7ce481",
+          "message": "Improved error handling in API endpoints",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2022-11-13 17:08:54.946090"
+        },
+        {
+          "hash": "194ccc266d6ae6cab9fe959adea8b6b4bce5f5b9",
+          "message": "Fixed typo in error messages",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-07-12 04:00:10.351918"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Homer Simpson",
+          "email": "homer.simpson@springfield.com"
+        },
+        {
+          "name": "Bart Simpson",
+          "email": "bart.simpson@springfield.com"
+        },
+        {
+          "name": "Lisa Simpson",
+          "email": "lisa.simpson@springfield.com"
+        },
+        {
+          "name": "Maggie Simpson",
+          "email": "maggie.simpson@springfield.com"
+        },
+        {
+          "name": "Ned Flanders",
+          "email": "ned.flanders@springfield.com"
+        },
+        {
+          "name": "Milhouse Van Houten",
+          "email": "milhouse.van.houten@springfield.com"
+        },
+        {
+          "name": "Nelson Muntz",
+          "email": "nelson.muntz@springfield.com"
+        },
+        {
+          "name": "Ralph Wiggum",
+          "email": "ralph.wiggum@springfield.com"
+        },
+        {
+          "name": "Mr. Burns",
+          "email": "mr..burns@springfield.com"
+        },
+        {
+          "name": "Waylon Smithers",
+          "email": "waylon.smithers@springfield.com"
+        },
+        {
+          "name": "Moe Szyslak",
+          "email": "moe.szyslak@springfield.com"
+        },
+        {
+          "name": "Apu Nahasapeemapetilon",
+          "email": "apu.nahasapeemapetilon@springfield.com"
+        },
+        {
+          "name": "Seymour Skinner",
+          "email": "seymour.skinner@springfield.com"
+        },
+        {
+          "name": "Edna Krabappel",
+          "email": "edna.krabappel@springfield.com"
+        },
+        {
+          "name": "Barney Gumble",
+          "email": "barney.gumble@springfield.com"
+        },
+        {
+          "name": "Chief Wiggum",
+          "email": "chief.wiggum@springfield.com"
+        },
+        {
+          "name": "Comic Book Guy",
+          "email": "comic.book.guy@springfield.com"
+        },
+        {
+          "name": "Krusty the Clown",
+          "email": "krusty.the.clown@springfield.com"
+        },
+        {
+          "name": "Sideshow Bob",
+          "email": "sideshow.bob@springfield.com"
+        },
+        {
+          "name": "Lenny Leonard",
+          "email": "lenny.leonard@springfield.com"
+        },
+        {
+          "name": "Patty Bouvier",
+          "email": "patty.bouvier@springfield.com"
+        },
+        {
+          "name": "Selma Bouvier",
+          "email": "selma.bouvier@springfield.com"
+        },
+        {
+          "name": "Reverend Lovejoy",
+          "email": "reverend.lovejoy@springfield.com"
+        },
+        {
+          "name": "Kent Brockman",
+          "email": "kent.brockman@springfield.com"
+        },
+        {
+          "name": "Mayor Quimby",
+          "email": "mayor.quimby@springfield.com"
+        },
+        {
+          "name": "Itchy",
+          "email": "itchy@springfield.com"
+        },
+        {
+          "name": "Scratchy",
+          "email": "scratchy@springfield.com"
+        },
+        {
+          "name": "Troy McClure",
+          "email": "troy.mcclure@springfield.com"
+        }
+      ],
+      "repositories": [
+        {
+          "name": "Kwik-E-Mart",
+          "description": "Kwik-E-Mart inventory and POS system"
+        }
+      ]
+    },
+    "4": {
+      "commits": [
+        {
+          "hash": "816b0e13b8279f89a4083452f5e860e3eec455d3",
+          "message": "Added unit tests for new features",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-05-25 17:39:53.023563"
+        },
+        {
+          "hash": "3e7d5f372af3ae967151694e75edd4d28c236961",
+          "message": "Optimized database queries for performance",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2024-05-10 01:33:46.645899"
+        },
+        {
+          "hash": "44bd9c26bb6375057f8d4121a98bbe886a593ea1",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2024-05-31 08:16:26.491253"
+        },
+        {
+          "hash": "61296869df59a8b13015c0facf9d6c709c008a1b",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-05-26 05:12:30.774444"
+        },
+        {
+          "hash": "65a716cdad65b86a41b4f65df862c6d79d3e73b7",
+          "message": "Improved security for data storage",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2023-04-04 05:10:25.310185"
+        },
+        {
+          "hash": "74b87acbf4ccf7f8b16a90476f2ea2086d3ec08d",
+          "message": "Implemented new payment gateway integration",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2023-02-24 00:53:04.538705"
+        },
+        {
+          "hash": "127960e928f9aeb379521e094303347cb7348a27",
+          "message": "Updated API responses for consistency",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-07-02 00:53:21.491362"
+        },
+        {
+          "hash": "a6306af9b122866bb92641b4fbdbeeab2337056d",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-01-10 08:50:24.868115"
+        },
+        {
+          "hash": "4f7162c6625e25ff797efa28d5bfadc529d3d825",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-01-31 01:47:37.458896"
+        },
+        {
+          "hash": "5373163d07d0728ea5ff15e535e3e29c7af87d65",
+          "message": "Revised documentation for setup instructions",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-05-19 14:49:04.925777"
+        },
+        {
+          "hash": "cfac36c6b2fe55f00b54f33e291ad33eb0059a42",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-10-25 20:24:56.859625"
+        },
+        {
+          "hash": "27dcd217defee98b4060b58aad036859cedfa762",
+          "message": "Optimized database queries for performance",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-01-26 02:00:53.683419"
+        },
+        {
+          "hash": "8ba8e6407718b20d5f92d52dad89c83d607987ee",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-10-13 16:50:11.088793"
+        },
+        {
+          "hash": "d6aed20c33f3e35339240aed8505124518815e1a",
+          "message": "Improved error handling in API endpoints",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2024-06-27 09:00:15.028326"
+        },
+        {
+          "hash": "bd2ebfdf18a3ca4422d8f92cc7e15c5b36dec196",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-05-08 22:45:16.766538"
+        },
+        {
+          "hash": "c51fdab94dd913e4cb78ebf776f239a09d9635ef",
+          "message": "Added support for new user roles",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-12-29 10:08:38.990338"
+        },
+        {
+          "hash": "e0cec9043df309d52a79215f8e34c08757a3ec16",
+          "message": "Revised documentation for setup instructions",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2023-09-01 05:15:40.560374"
+        },
+        {
+          "hash": "b4bad29af82eef08bb77af2ef47408b40fc4b1ac",
+          "message": "Resolved issue with session management",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-10-23 01:37:25.560704"
+        },
+        {
+          "hash": "74fff939d35574227794ceb775158f1da51ae0f8",
+          "message": "Fixed typo in error messages",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2024-03-20 09:42:52.958300"
+        },
+        {
+          "hash": "56cd9f3214e6a41a5819947ac9c1dbaf0e8d7392",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-10-31 03:42:42.199237"
+        },
+        {
+          "hash": "fb4526e00aa19617c01a1bc3a33d02087fd3b8bf",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-07-15 18:05:46.144161"
+        },
+        {
+          "hash": "850fbb125be9cf8d63da352cde1f3decf633c92b",
+          "message": "Fixed bug in authentication logic",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-10-06 22:45:44.419051"
+        },
+        {
+          "hash": "1eae1c3f3bb81ef09e95a749bbbc6022b6f14933",
+          "message": "Added unit tests for new features",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2023-04-04 15:09:04.804925"
+        },
+        {
+          "hash": "3fa1b180d18b68d05f3e9c5fbe40c1bf8f71405a",
+          "message": "Added unit tests for new features",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-06-12 14:34:18.900583"
+        },
+        {
+          "hash": "b14bfe369175e83731da43ead5a32734f9703442",
+          "message": "Optimized database queries for performance",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2022-05-21 12:59:41.265379"
+        },
+        {
+          "hash": "a8edfc9e1e4378de29b9eba28b6a031dde615915",
+          "message": "Enhanced UI for better user experience",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-08-31 01:00:45.995249"
+        },
+        {
+          "hash": "fff4c6d9dd6c977582bd374cd43977e01852921c",
+          "message": "Fixed typo in error messages",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-11-27 19:19:19.655662"
+        },
+        {
+          "hash": "41b9e052f42227fffda06728f775de1ce71dd91e",
+          "message": "Added support for new user roles",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-02-06 03:56:17.710247"
+        },
+        {
+          "hash": "a0d43c62eedfdfc540433ccdc012bfba52e59e13",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2022-03-10 23:04:03.095781"
+        },
+        {
+          "hash": "592b0ab9ce3f087ee95a3597e24997e250c39689",
+          "message": "Optimized database queries for performance",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-01-21 09:58:22.860118"
+        },
+        {
+          "hash": "0b61571264a54d8f770f9c107a819d16008238a9",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2024-03-25 08:43:37.013702"
+        },
+        {
+          "hash": "4ed1c847f057e5a8fb26ffc604769815a5418d47",
+          "message": "Added unit tests for new features",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-02-22 00:11:15.992533"
+        },
+        {
+          "hash": "42ba382474cdf1812294f40d0ac7946394f5c96b",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-07-12 12:15:52.884259"
+        },
+        {
+          "hash": "886e4ba5bca9ac2f85d13f20d5e414dab4bc90cb",
+          "message": "Fixed bug in authentication logic",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-12-23 23:44:09.194078"
+        },
+        {
+          "hash": "9ca1873a06aaf92eb1614b7b6e9262bf8423bcf9",
+          "message": "Fixed bug in authentication logic",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2022-08-25 06:31:22.498358"
+        },
+        {
+          "hash": "cc1ebd7b1dc0094ee5b58a66996a61e56cbe35dd",
+          "message": "Added unit tests for new features",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-07-09 10:25:56.443634"
+        },
+        {
+          "hash": "36ee79ca21972c76de55ac74ce0dabc83a90a4ac",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-02-03 18:15:49.475783"
+        },
+        {
+          "hash": "c90023e2881ad12e239d3fa97cb348b8f7b88c4a",
+          "message": "Updated API responses for consistency",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-11-03 22:27:00.181484"
+        },
+        {
+          "hash": "32e5d28c20c5dc2d93476ea5d3596bd89bba7fff",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-04-04 11:27:33.927000"
+        },
+        {
+          "hash": "74369a80eaa3aea90310c626ed148050112a3a6b",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2022-04-04 04:44:08.237035"
+        },
+        {
+          "hash": "8022563bbad88b710948b2c2aa97fc5324fd3bb7",
+          "message": "Added logging for debugging purposes",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2024-02-13 22:29:55.911723"
+        },
+        {
+          "hash": "062d382ee5c09709e6603fc7a7b995f244288ade",
+          "message": "Resolved issue with session management",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-01-03 17:32:05.264071"
+        },
+        {
+          "hash": "917c127b78a3033a9f4732674ad1a39cf841f4fb",
+          "message": "Resolved issue with session management",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-01-28 11:41:32.917339"
+        },
+        {
+          "hash": "c2188e775fee22d55665fb9ff549a6a58627099b",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-01-01 23:00:54.554718"
+        },
+        {
+          "hash": "2d60b23e59dcc1527d6f313cf5d7795d99b72ee3",
+          "message": "Updated API responses for consistency",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2022-09-04 07:57:29.838530"
+        },
+        {
+          "hash": "04929f2d17fa80e2c4c4ae841dd07e6ee72881e8",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-12-21 21:34:53.970325"
+        },
+        {
+          "hash": "d349dc9e5eb4509bd212ddade86cbb20262cb6c0",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-03-01 00:52:42.739479"
+        },
+        {
+          "hash": "cd9093824060c154346ca82060dc50d3628feb73",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-01-28 17:25:43.673218"
+        },
+        {
+          "hash": "21d418d5c676190dd31b0301279ea7492700aac0",
+          "message": "Added support for new user roles",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2024-04-06 21:56:36.464400"
+        },
+        {
+          "hash": "7c955f4abab46f2935a1683da9248238aee3c24b",
+          "message": "Implemented new payment gateway integration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2024-04-06 06:21:33.350823"
+        },
+        {
+          "hash": "dc3411e35c1e8b96dbf6a1f79c8c825b7f20f29f",
+          "message": "Resolved issue with session management",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-08-10 17:20:10.718595"
+        },
+        {
+          "hash": "e28b6b07003e4865846488d9d5f9cff0b36e4fea",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2024-06-02 11:51:15.892858"
+        },
+        {
+          "hash": "52d0b9519d874deb13d88ce988198050669120b6",
+          "message": "Updated API responses for consistency",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2024-04-13 00:55:28.546053"
+        },
+        {
+          "hash": "9e2e556304e353630bce9933bf1fe2c9eeeed657",
+          "message": "Updated API responses for consistency",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2024-07-06 13:15:42.291172"
+        },
+        {
+          "hash": "c9389656b43ffc06b1653d0607e2ac9dd47ab0bf",
+          "message": "Revised documentation for setup instructions",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-03-27 03:34:18.187488"
+        },
+        {
+          "hash": "8c05c4bb264f6da04ab507229aceed1306850b13",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-10-25 11:10:39.574285"
+        },
+        {
+          "hash": "8788df02176a8b6f2dfcb2bbcd40491d16b04a79",
+          "message": "Improved error handling in API endpoints",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2022-03-24 17:45:07.558067"
+        },
+        {
+          "hash": "ef461bc6332d6c11742e09ede0687ad71237877d",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-03-18 02:43:01.550746"
+        },
+        {
+          "hash": "5a26f183e6811950e17b3257ef456f050ac74b14",
+          "message": "Implemented new payment gateway integration",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2024-04-26 01:06:03.873719"
+        },
+        {
+          "hash": "1ef94a0f80f7826c2645fc8d92782ac60a14e2ab",
+          "message": "Improved security for data storage",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2024-07-01 02:19:14.851420"
+        },
+        {
+          "hash": "6abf23a5704ff10dd6798260f2cb147498c2e654",
+          "message": "Added support for new user roles",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-11-12 08:30:32.099847"
+        },
+        {
+          "hash": "182c5d6d54b4ae5b3e0ff2a1c261b24e073db36d",
+          "message": "Updated API responses for consistency",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-04-11 17:35:13.857312"
+        },
+        {
+          "hash": "5e8efe153bc389aaf4b575d083af22c109f383a0",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-06-06 06:56:13.947643"
+        },
+        {
+          "hash": "29eb56357b8dfa1138e53c8fc9ad35cb95195895",
+          "message": "Refactored user profile module",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2024-06-17 05:19:11.653674"
+        },
+        {
+          "hash": "8d94fca6fdc4aa7a4d8626fa647eab4e5bf75b86",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-07-15 13:49:52.450232"
+        },
+        {
+          "hash": "dbecd05aa74f448c7bc6b9ca71985aa006478e5e",
+          "message": "Implemented new payment gateway integration",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2024-05-11 17:32:11.510015"
+        },
+        {
+          "hash": "aaf4c747cec8754ab6acee77d5cec8dbbeec9f2e",
+          "message": "Resolved issue with session management",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-01-12 22:45:29.297579"
+        },
+        {
+          "hash": "e74e7f631a700f4499857a4f653ebc4b9a330750",
+          "message": "Improved error handling in API endpoints",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-05-20 09:28:34.257376"
+        },
+        {
+          "hash": "246cbab5c418e2075f50122a8ed167fcd73e5d6b",
+          "message": "Enhanced UI for better user experience",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-01-02 09:54:18.681702"
+        },
+        {
+          "hash": "fd1e78893d4b2ac780a81f885330537986d750c7",
+          "message": "Refactored user profile module",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-02-12 02:20:36.956071"
+        },
+        {
+          "hash": "0342509eaecb5d36de441ed740da7c550ebdfeb6",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-01-22 21:08:48.901178"
+        },
+        {
+          "hash": "f3cdd915f51ba7543f0ba7ad528125c00ad726ba",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-04-26 17:58:58.674924"
+        },
+        {
+          "hash": "c68ffa81c2b5a506801cd9d9526260ba3a992d73",
+          "message": "Implemented new payment gateway integration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-11-02 04:56:03.142681"
+        },
+        {
+          "hash": "8976780688783f87686cbcbf1e609b4bb9eb1547",
+          "message": "Added unit tests for new features",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-03-25 09:51:52.039111"
+        },
+        {
+          "hash": "161b0829126307ae45046af3a04463d5d8118849",
+          "message": "Fixed typo in error messages",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-08-15 20:14:05.364506"
+        },
+        {
+          "hash": "ec835b9bae4933e62108211d4e7a79400d8086e8",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-06-05 02:24:48.054425"
+        },
+        {
+          "hash": "e968476ff03aec1fe5001134311727574bcc958d",
+          "message": "Fixed bug in authentication logic",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-02-20 01:00:45.133237"
+        },
+        {
+          "hash": "1ff8fcf67b03bf56793de177b3f29348fac4e488",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2022-09-27 11:52:22.717987"
+        },
+        {
+          "hash": "ab53463ffde0d9aae7488c08011dc86bd8b298a5",
+          "message": "Implemented new payment gateway integration",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-04-18 03:45:35.415114"
+        },
+        {
+          "hash": "9056d40fae7828465ac097e65c42f92cdf5f9019",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-12-17 04:21:10.808162"
+        },
+        {
+          "hash": "f6fc6cb3b35c1169a94fbddf06862fc0b0235821",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-11-18 05:43:36.359313"
+        },
+        {
+          "hash": "c4030c39f3600473f327f13f35a3d2a620d84d9c",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2024-03-30 00:11:39.226409"
+        },
+        {
+          "hash": "c62ad3e10e516a80442cb3eff5186205a8bd9dfe",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-05-23 07:00:16.859493"
+        },
+        {
+          "hash": "ba343379c5b125f0f83f84dcc85c333ad67e19fc",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-01-23 07:16:36.853268"
+        },
+        {
+          "hash": "74ea8f7aab14dc39daf365fc19953246847c6c63",
+          "message": "Added logging for debugging purposes",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-05-18 20:37:26.334424"
+        },
+        {
+          "hash": "700bda194eeff33b7ee4de855e122a4d11c9e157",
+          "message": "Improved error handling in API endpoints",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-03-06 05:40:21.997909"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Homer Simpson",
+          "email": "homer.simpson@springfield.com"
+        },
+        {
+          "name": "Marge Simpson",
+          "email": "marge.simpson@springfield.com"
+        },
+        {
+          "name": "Lisa Simpson",
+          "email": "lisa.simpson@springfield.com"
+        },
+        {
+          "name": "Maggie Simpson",
+          "email": "maggie.simpson@springfield.com"
+        },
+        {
+          "name": "Ned Flanders",
+          "email": "ned.flanders@springfield.com"
+        },
+        {
+          "name": "Milhouse Van Houten",
+          "email": "milhouse.van.houten@springfield.com"
+        },
+        {
+          "name": "Nelson Muntz",
+          "email": "nelson.muntz@springfield.com"
+        },
+        {
+          "name": "Ralph Wiggum",
+          "email": "ralph.wiggum@springfield.com"
+        },
+        {
+          "name": "Mr. Burns",
+          "email": "mr..burns@springfield.com"
+        },
+        {
+          "name": "Waylon Smithers",
+          "email": "waylon.smithers@springfield.com"
+        },
+        {
+          "name": "Moe Szyslak",
+          "email": "moe.szyslak@springfield.com"
+        },
+        {
+          "name": "Apu Nahasapeemapetilon",
+          "email": "apu.nahasapeemapetilon@springfield.com"
+        },
+        {
+          "name": "Seymour Skinner",
+          "email": "seymour.skinner@springfield.com"
+        },
+        {
+          "name": "Edna Krabappel",
+          "email": "edna.krabappel@springfield.com"
+        },
+        {
+          "name": "Barney Gumble",
+          "email": "barney.gumble@springfield.com"
+        },
+        {
+          "name": "Chief Wiggum",
+          "email": "chief.wiggum@springfield.com"
+        },
+        {
+          "name": "Krusty the Clown",
+          "email": "krusty.the.clown@springfield.com"
+        },
+        {
+          "name": "Sideshow Bob",
+          "email": "sideshow.bob@springfield.com"
+        },
+        {
+          "name": "Lenny Leonard",
+          "email": "lenny.leonard@springfield.com"
+        },
+        {
+          "name": "Carl Carlson",
+          "email": "carl.carlson@springfield.com"
+        },
+        {
+          "name": "Patty Bouvier",
+          "email": "patty.bouvier@springfield.com"
+        },
+        {
+          "name": "Selma Bouvier",
+          "email": "selma.bouvier@springfield.com"
+        },
+        {
+          "name": "Reverend Lovejoy",
+          "email": "reverend.lovejoy@springfield.com"
+        },
+        {
+          "name": "Kent Brockman",
+          "email": "kent.brockman@springfield.com"
+        },
+        {
+          "name": "Mayor Quimby",
+          "email": "mayor.quimby@springfield.com"
+        },
+        {
+          "name": "Itchy",
+          "email": "itchy@springfield.com"
+        },
+        {
+          "name": "Scratchy",
+          "email": "scratchy@springfield.com"
+        },
+        {
+          "name": "Troy McClure",
+          "email": "troy.mcclure@springfield.com"
+        }
+      ],
+      "repositories": [
+        {
+          "name": "Springfield Elementary",
+          "description": "Springfield Elementary school management software"
+        }
+      ]
+    },
+    "5": {
+      "commits": [
+        {
+          "hash": "d4b14062dc6596c58e36a15c0e8782e8e4311ed3",
+          "message": "Fixed typo in error messages",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-08-24 07:21:08.401683"
+        },
+        {
+          "hash": "a2318830ba474cd4625caf0156328ec17be46929",
+          "message": "Improved security for data storage",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-12-02 06:43:03.894866"
+        },
+        {
+          "hash": "9955a84c5bd2254d2f187ca861fbb2fe6a31326f",
+          "message": "Implemented new payment gateway integration",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-04-04 11:09:36.809106"
+        },
+        {
+          "hash": "672397f8f58d8edd02c7aa460e4f0b1469590995",
+          "message": "Resolved issue with session management",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-05-16 23:33:26.812675"
+        },
+        {
+          "hash": "7ed8e2996694ef87a9cb55b618cec5e7cba5cdcb",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2024-07-15 16:20:36.607363"
+        },
+        {
+          "hash": "da6809195df7aebe2e35c0fafdf399c4b4a2be6c",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-08-21 01:17:01.827395"
+        },
+        {
+          "hash": "68c6d0a8ffa820095714671556a2f5dd12d4d76f",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-05-13 08:59:28.753690"
+        },
+        {
+          "hash": "f2ee96c61e996f29c4c541888d0d3faf6074f709",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-03-01 05:22:54.251746"
+        },
+        {
+          "hash": "37ce110095ffeaad80a30f595fc2f5e9d5bbb8ac",
+          "message": "Fixed typo in error messages",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2023-03-17 18:16:44.745444"
+        },
+        {
+          "hash": "cbdae1cc74a94295784d13f0b2f6086fe1d4f431",
+          "message": "Resolved issue with session management",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-07-26 01:09:55.978948"
+        },
+        {
+          "hash": "b17a83109ac86a7bd3d2ede01231d7906b3f8547",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-07-04 23:32:30.379745"
+        },
+        {
+          "hash": "6b96b412530bb1d59b585ad359606261e6ddfa9c",
+          "message": "Enhanced UI for better user experience",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2022-04-02 00:04:11.868292"
+        },
+        {
+          "hash": "1d132c012a315e6e00c86db80c4fdee4d87a707b",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-07-16 07:56:09.941257"
+        },
+        {
+          "hash": "03b6a62da41f5f56f45ffd2363122936a989ee57",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-03-30 05:04:59.450243"
+        },
+        {
+          "hash": "e6e914901a3ed21b4b16cf54528806c3b3e2b0d8",
+          "message": "Revised documentation for setup instructions",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-12-03 00:23:22.034699"
+        },
+        {
+          "hash": "c43561427a2f2d032e5cc1c60c90937b11ef3059",
+          "message": "Updated API responses for consistency",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-11-23 00:39:11.080469"
+        },
+        {
+          "hash": "e4b8d4cd402373499d7a86e6ea9acf8438fe73e0",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-10-21 02:00:53.640508"
+        },
+        {
+          "hash": "cd587c3674c53bedb46b417f98acc1cf269df3de",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-05-01 17:35:35.110041"
+        },
+        {
+          "hash": "054c0faf637be21b71041fb6475423220f4a46d3",
+          "message": "Added logging for debugging purposes",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-08-24 10:41:19.530204"
+        },
+        {
+          "hash": "4461deb9cce63d99faa94a0a1c5ebdc22bdb0afc",
+          "message": "Enhanced UI for better user experience",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-04-13 14:49:59.134977"
+        },
+        {
+          "hash": "4edf485cae6c9c1027e714317d617c5a7bfeaae2",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2024-05-04 00:19:18.955347"
+        },
+        {
+          "hash": "ef761423adb1b6dd65c4b42caf2d5d284cc83675",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-02-11 12:55:25.376526"
+        },
+        {
+          "hash": "bcb0d93f661579df9849528ed2328755abffad2b",
+          "message": "Enhanced UI for better user experience",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-04-30 17:40:09.643327"
+        },
+        {
+          "hash": "fd27350cb3c0e85ad3d05b737a21d4213987bc70",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2024-01-12 15:34:14.585308"
+        },
+        {
+          "hash": "faa827e9e9cd75d2ce77396a0d1dfd5ef844f200",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-10-03 17:13:06.719179"
+        },
+        {
+          "hash": "c8eb2deb4a7ab3cdca5eef4be445e406b59e2a62",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-05-29 17:14:14.164110"
+        },
+        {
+          "hash": "7b909a0720069b6c3397796dd6b42defc17c2174",
+          "message": "Added unit tests for new features",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2022-12-07 20:13:06.301832"
+        },
+        {
+          "hash": "2a3b4f72409c3bb075bf28732e760266d3bc326e",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-04-01 08:22:58.378037"
+        },
+        {
+          "hash": "971b6f30aa3e0163766627d2b81f8790c6c43dbb",
+          "message": "Added support for new user roles",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-03-28 20:59:59.870217"
+        },
+        {
+          "hash": "3b889e974b3a66cbfc366d84b9a6fc4f7c884cb8",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-12-05 14:58:34.303712"
+        },
+        {
+          "hash": "b8e1d6142759f17c73f39978178a6bce8a782872",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-04-18 17:33:10.514585"
+        },
+        {
+          "hash": "bf2bdfe7316ae7c02010f92daf5775e4c2805b1b",
+          "message": "Added logging for debugging purposes",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-02-03 23:56:36.061078"
+        },
+        {
+          "hash": "1133a1b928e787a4aea652f74aaf16fe615b8fb8",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2022-03-01 09:16:01.911837"
+        },
+        {
+          "hash": "b2a036860bca1e4d8d3533ad19f9b268ede136c5",
+          "message": "Refactored user profile module",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-12-07 05:34:42.783053"
+        },
+        {
+          "hash": "6fe67536a6a8cb5405849d7a9a24a4ba6ea20b1a",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2022-03-21 03:07:24.375157"
+        },
+        {
+          "hash": "334e4d4ee0f194ad2575c39e4d65d25fa7f085bc",
+          "message": "Enhanced UI for better user experience",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2023-09-18 12:13:17.373395"
+        },
+        {
+          "hash": "b562d2f070540726d2c4c0886471164f541f1471",
+          "message": "Enhanced UI for better user experience",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-01-17 15:51:37.321305"
+        },
+        {
+          "hash": "0ef33f6c6d805667745ca7ae88264409bc2c000d",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-12-12 00:58:21.074635"
+        },
+        {
+          "hash": "adba0c48c6c14ab8f130fd5477628556daa545cb",
+          "message": "Revised documentation for setup instructions",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2023-05-04 13:13:39.165951"
+        },
+        {
+          "hash": "c2fe6ef8460576de02bc6cf1816251e912c7f133",
+          "message": "Added unit tests for new features",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-10-08 17:06:50.513433"
+        },
+        {
+          "hash": "7fbaddc92273373591421e2cf09bda2ad2f5f4ad",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-04-10 17:44:02.796272"
+        },
+        {
+          "hash": "afd7e88f4eeea7eb4a600caf728f464a7ac49b3a",
+          "message": "Improved security for data storage",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-05-10 00:17:11.091894"
+        },
+        {
+          "hash": "690b79df56dbd7608fdaeb0c4fe70ce4c1dc6962",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-02-14 11:48:20.002674"
+        },
+        {
+          "hash": "391889871354981691e607285fdfb645beef6afa",
+          "message": "Improved security for data storage",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-02-22 10:03:00.182850"
+        },
+        {
+          "hash": "7688fdbe206d0c3fed7bff9509c0b4aff5a62a75",
+          "message": "Refactored user profile module",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2022-01-01 11:18:08.754523"
+        },
+        {
+          "hash": "16f35fa9a824927ba86cae49ca23ead285597589",
+          "message": "Enhanced UI for better user experience",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2023-08-30 19:51:55.670271"
+        },
+        {
+          "hash": "349d40a4daab9af22541b88fbe0f6c38801ebb69",
+          "message": "Resolved issue with session management",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-10-14 01:47:42.922212"
+        },
+        {
+          "hash": "3529cfb1dd27ca45d18d5633370ab9dc5ed32538",
+          "message": "Refactored user profile module",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2023-01-30 21:32:40.091046"
+        },
+        {
+          "hash": "cc0db086e0273a92cd1073cefd76053cb8baa96b",
+          "message": "Revised documentation for setup instructions",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2024-07-23 05:15:32.957173"
+        },
+        {
+          "hash": "b95555945625def6de685bb4d56dbe3c99d050ed",
+          "message": "Updated API responses for consistency",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2024-03-10 17:21:53.707180"
+        },
+        {
+          "hash": "fd231271975c4f855ffde0519f85e33c58c1a8bf",
+          "message": "Improved error handling in API endpoints",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-04-29 09:49:56.158592"
+        },
+        {
+          "hash": "adbe1a4eebf70e6ef52e7bbbf1ea570e2469b646",
+          "message": "Enhanced UI for better user experience",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-10-06 03:27:54.949616"
+        },
+        {
+          "hash": "39662f0ffad47d51fd37004ef9556ec5adc1ad67",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2024-05-13 20:43:05.299641"
+        },
+        {
+          "hash": "b9539350f618499b12949c9d53106c991ab595b2",
+          "message": "Added support for new user roles",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-02-11 11:13:52.166207"
+        },
+        {
+          "hash": "6b4daa596d7f7310c660bf03b8660ac89846804e",
+          "message": "Fixed typo in error messages",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2022-04-02 06:09:35.025000"
+        },
+        {
+          "hash": "cac640cc53d62441883236c987e3bcf69cf023fb",
+          "message": "Resolved issue with session management",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-04-29 02:39:43.643776"
+        },
+        {
+          "hash": "25e0ae5844b6150aa622eff494e275e6cf855340",
+          "message": "Resolved issue with session management",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-12-04 22:31:38.231335"
+        },
+        {
+          "hash": "9466995cc9dd0ba33860410e6cd7b4fec9c2c98a",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2022-11-14 07:01:02.796913"
+        },
+        {
+          "hash": "d1db74865caa984a24aa0fa39bd37d4b17e4615a",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-06-11 15:43:54.805793"
+        },
+        {
+          "hash": "9dde9a8516c774b8a36fd56b667e847293c24f2c",
+          "message": "Optimized database queries for performance",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2022-10-24 05:46:33.572235"
+        },
+        {
+          "hash": "bc7561c8f4052ddc0ca6f0df8a17494d4ccc87b7",
+          "message": "Implemented new payment gateway integration",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-11-04 08:30:10.367390"
+        },
+        {
+          "hash": "8051c47756a42f60a1e2b102c0f6c4916652872d",
+          "message": "Improved security for data storage",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-12-16 20:13:32.451934"
+        },
+        {
+          "hash": "f78de5692413185c23447b53ab538f3a1236892c",
+          "message": "Fixed bug in authentication logic",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2022-03-29 06:16:44.783042"
+        },
+        {
+          "hash": "4670c4c8bc8288ad90534ba9709e59667ffe86df",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2024-06-28 23:28:09.910341"
+        },
+        {
+          "hash": "780affd61b89d590c21bed7557bd6361ed854cbb",
+          "message": "Improved error handling in API endpoints",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-10-07 21:45:16.472524"
+        },
+        {
+          "hash": "2b273cb5a294612872e7bf0719e15a066ac72bfa",
+          "message": "Improved security for data storage",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-03-03 00:37:20.297033"
+        },
+        {
+          "hash": "06321691834c322cae84beaa2648d3e1cdb40bd3",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2022-06-06 02:54:38.602041"
+        },
+        {
+          "hash": "943dcb8b651bcc5b49db0e98829454542fc8f67a",
+          "message": "Fixed typo in error messages",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-03-14 13:20:09.566517"
+        },
+        {
+          "hash": "0b3a7d69613e0ee3aa4c77c694b609bc5abeb758",
+          "message": "Resolved issue with session management",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-09-13 05:18:58.128839"
+        },
+        {
+          "hash": "d67000e21aca938507353f7cda2dfbf48c8b68f8",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-07-15 06:21:38.306920"
+        },
+        {
+          "hash": "0d77d86c5db31e8f580e6839646e3ecadf6a1db8",
+          "message": "Added unit tests for new features",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-01-27 16:38:20.427652"
+        },
+        {
+          "hash": "3a0ae0ac83396b676ef362d1dcc0248045a690dc",
+          "message": "Added unit tests for new features",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-01-22 05:10:14.291092"
+        },
+        {
+          "hash": "35aa1e0c7ff1d8e9146e80bd6161494e8c270066",
+          "message": "Improved error handling in API endpoints",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2024-06-11 04:29:53.247813"
+        },
+        {
+          "hash": "a0fd9ffd71a99761307dcdb5ea4e14b3e30923b9",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2023-05-15 23:12:04.887891"
+        },
+        {
+          "hash": "a09cf3d819f1b6f709b4890358fc26ffb1b42079",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2022-11-24 06:38:08.466646"
+        },
+        {
+          "hash": "8ab636c2cb2f9701bba47c04febe8291d1552562",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2024-06-27 19:53:50.513866"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Homer Simpson",
+          "email": "homer.simpson@springfield.com"
+        },
+        {
+          "name": "Marge Simpson",
+          "email": "marge.simpson@springfield.com"
+        },
+        {
+          "name": "Bart Simpson",
+          "email": "bart.simpson@springfield.com"
+        },
+        {
+          "name": "Lisa Simpson",
+          "email": "lisa.simpson@springfield.com"
+        },
+        {
+          "name": "Maggie Simpson",
+          "email": "maggie.simpson@springfield.com"
+        },
+        {
+          "name": "Ned Flanders",
+          "email": "ned.flanders@springfield.com"
+        },
+        {
+          "name": "Milhouse Van Houten",
+          "email": "milhouse.van.houten@springfield.com"
+        },
+        {
+          "name": "Nelson Muntz",
+          "email": "nelson.muntz@springfield.com"
+        },
+        {
+          "name": "Ralph Wiggum",
+          "email": "ralph.wiggum@springfield.com"
+        },
+        {
+          "name": "Mr. Burns",
+          "email": "mr..burns@springfield.com"
+        },
+        {
+          "name": "Waylon Smithers",
+          "email": "waylon.smithers@springfield.com"
+        },
+        {
+          "name": "Apu Nahasapeemapetilon",
+          "email": "apu.nahasapeemapetilon@springfield.com"
+        },
+        {
+          "name": "Seymour Skinner",
+          "email": "seymour.skinner@springfield.com"
+        },
+        {
+          "name": "Edna Krabappel",
+          "email": "edna.krabappel@springfield.com"
+        },
+        {
+          "name": "Barney Gumble",
+          "email": "barney.gumble@springfield.com"
+        },
+        {
+          "name": "Chief Wiggum",
+          "email": "chief.wiggum@springfield.com"
+        },
+        {
+          "name": "Comic Book Guy",
+          "email": "comic.book.guy@springfield.com"
+        },
+        {
+          "name": "Krusty the Clown",
+          "email": "krusty.the.clown@springfield.com"
+        },
+        {
+          "name": "Sideshow Bob",
+          "email": "sideshow.bob@springfield.com"
+        },
+        {
+          "name": "Lenny Leonard",
+          "email": "lenny.leonard@springfield.com"
+        },
+        {
+          "name": "Carl Carlson",
+          "email": "carl.carlson@springfield.com"
+        },
+        {
+          "name": "Patty Bouvier",
+          "email": "patty.bouvier@springfield.com"
+        },
+        {
+          "name": "Selma Bouvier",
+          "email": "selma.bouvier@springfield.com"
+        },
+        {
+          "name": "Reverend Lovejoy",
+          "email": "reverend.lovejoy@springfield.com"
+        },
+        {
+          "name": "Kent Brockman",
+          "email": "kent.brockman@springfield.com"
+        },
+        {
+          "name": "Itchy",
+          "email": "itchy@springfield.com"
+        },
+        {
+          "name": "Scratchy",
+          "email": "scratchy@springfield.com"
+        },
+        {
+          "name": "Troy McClure",
+          "email": "troy.mcclure@springfield.com"
+        }
+      ],
+      "repositories": [
+        {
+          "name": "Moes Tavern",
+          "description": "Moes Tavern customer and inventory management"
+        }
+      ]
+    },
+    "2": {
+      "commits": [
+        {
+          "hash": "272457f582d5397f633c9d94dd0e68df9de7c308",
+          "message": "Added logging for debugging purposes",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-12-08 11:43:38.381125"
+        },
+        {
+          "hash": "4d2fc8398cd2378ac7ece7474454707230176b35",
+          "message": "Refactored user profile module",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-07-10 01:10:18.112865"
+        },
+        {
+          "hash": "3487d10b8876ac81a8a9e42609309ab3c6aa4a85",
+          "message": "Revised documentation for setup instructions",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2022-01-15 15:55:08.895837"
+        },
+        {
+          "hash": "2281cc31ffb44014effb113cc826fb3deb473ec4",
+          "message": "Optimized database queries for performance",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2023-07-17 16:29:32.506283"
+        },
+        {
+          "hash": "c500ab2d0123b616fc8f1ec1101d41e0043e6da6",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-02-27 06:55:33.142684"
+        },
+        {
+          "hash": "34a18c3dab2332c94103894c2cef436ce7391d68",
+          "message": "Enhanced UI for better user experience",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2023-09-23 19:04:19.206416"
+        },
+        {
+          "hash": "ee325a704494ad4ad6d6d9fc152c35f6677d6c4c",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-08-10 08:53:58.399130"
+        },
+        {
+          "hash": "a962a4396ca8f94d7172f4672cc12a7b938d9853",
+          "message": "Optimized database queries for performance",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2024-04-01 11:24:21.864550"
+        },
+        {
+          "hash": "5d1a603a7f97658703c7abe3e92f35ea4b0ba2b0",
+          "message": "Optimized database queries for performance",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2022-11-01 23:30:48.156561"
+        },
+        {
+          "hash": "9c1435e82d55a00aa5d382fd21ede0802c659f83",
+          "message": "Improved error handling in API endpoints",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-03-13 18:56:09.260338"
+        },
+        {
+          "hash": "e7836b5c9b763ef46b8b3a08131135fc14d675ee",
+          "message": "Enhanced UI for better user experience",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2023-02-19 12:26:12.281241"
+        },
+        {
+          "hash": "fac9335a090b0a309a06907fbf7c9f126317f833",
+          "message": "Added logging for debugging purposes",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2024-05-09 19:37:05.510495"
+        },
+        {
+          "hash": "46d82f214379dfe3fbaf84c2c1c1e022a85c754e",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2024-05-13 08:11:53.891691"
+        },
+        {
+          "hash": "59333787022d68a502503e2770feef304afeb070",
+          "message": "Implemented new payment gateway integration",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2022-07-30 21:24:39.159187"
+        },
+        {
+          "hash": "29eb9d196badea474039619461e53a87998f70da",
+          "message": "Improved security for data storage",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-06-13 00:11:55.903460"
+        },
+        {
+          "hash": "04b2da8a360759f04ce7d11931de1689113fd4ed",
+          "message": "Added support for new user roles",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-09-13 02:15:53.392057"
+        },
+        {
+          "hash": "5465015e309be9ebc60802a8e7b17292539d7bf4",
+          "message": "Revised documentation for setup instructions",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-02-27 21:16:26.188860"
+        },
+        {
+          "hash": "18b7554d99ae65eb6cfbad0a91c496050d3a9793",
+          "message": "Added support for new user roles",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2024-07-08 09:36:57.872682"
+        },
+        {
+          "hash": "4ceebc121beaad61d638258044d53d5676786c46",
+          "message": "Implemented new payment gateway integration",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2024-07-01 08:14:54.361884"
+        },
+        {
+          "hash": "d86dd7b88a70cefed9b953e8d3349f1e53c24cf8",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2024-06-01 19:49:53.171184"
+        },
+        {
+          "hash": "026e78ecd26223fec82a03319ba7a00aef88639b",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-05-16 08:05:44.271514"
+        },
+        {
+          "hash": "3fdffa8b7c1df7cada11697a26b01c49f6312d8d",
+          "message": "Fixed bug in authentication logic",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-02-13 17:22:45.101021"
+        },
+        {
+          "hash": "51379a4a722278d929692b3dcae085f993b75c68",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-07-30 15:56:12.388241"
+        },
+        {
+          "hash": "dd5fba066c64f18df001c3820365432f229e27f9",
+          "message": "Updated API responses for consistency",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-12-29 13:35:40.889752"
+        },
+        {
+          "hash": "9e2f28caf590e30d33a425d011a12c1db9319acc",
+          "message": "Improved security for data storage",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2024-07-15 14:01:20.400788"
+        },
+        {
+          "hash": "869df78f6747ff1e78da9afe3ea83e4903536b25",
+          "message": "Added logging for debugging purposes",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-01-16 14:38:31.666220"
+        },
+        {
+          "hash": "5b4490452569d4ef3808e7b2022359ce86e4ddcc",
+          "message": "Added logging for debugging purposes",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2023-06-05 12:12:07.551264"
+        },
+        {
+          "hash": "0be39fa364778eb9bfa5f9755555293f74b4c3aa",
+          "message": "Improved error handling in API endpoints",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2024-02-28 03:04:00.734263"
+        },
+        {
+          "hash": "bb10e64d26b81b657b34d38bc3fecbcee52c1bed",
+          "message": "Optimized database queries for performance",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2023-08-15 08:39:31.684069"
+        },
+        {
+          "hash": "a4ad21b3c4194101a2a1c618379a297bc08046e6",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2024-02-19 20:01:19.931149"
+        },
+        {
+          "hash": "0b87cd69563ee9cfd9487cb72c5283b5bc19231b",
+          "message": "Optimized database queries for performance",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-03-17 08:59:02.769422"
+        },
+        {
+          "hash": "e5be7bc852fc7af2508f7f24220a44a0c5ef107b",
+          "message": "Implemented new payment gateway integration",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2022-05-24 06:53:08.918313"
+        },
+        {
+          "hash": "42217c05628fa0b1546707d901f64377f9d146c8",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2024-05-28 06:01:56.905728"
+        },
+        {
+          "hash": "919f59bd0e21710521684de5efe03bd9f40014f7",
+          "message": "Added unit tests for new features",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-02-09 23:05:38.497005"
+        },
+        {
+          "hash": "04d6f7ae345bc19a68c4b07f82c0f9af91f84771",
+          "message": "Resolved issue with session management",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2022-02-27 06:02:09.026649"
+        },
+        {
+          "hash": "1d328f89c02a150de1cda0a0518950de31ba767c",
+          "message": "Implemented new payment gateway integration",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-09-22 16:13:16.202957"
+        },
+        {
+          "hash": "8414a09ccf3c8f60020330a5a5729ddde67c76e1",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2022-10-11 15:00:36.880760"
+        },
+        {
+          "hash": "ed52c7239cf62e042ce56b88ed7d4ff2f58560f9",
+          "message": "Refactored user profile module",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-03-18 17:17:11.950403"
+        },
+        {
+          "hash": "ec97179b4e93a851c300a3e41c8dc92df9675948",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2022-09-22 21:53:30.227718"
+        },
+        {
+          "hash": "fbc8f169bb04f242b551925fa54d316c2b361b2b",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2024-06-24 02:29:23.434349"
+        },
+        {
+          "hash": "14d35312a16b7f362b7fea737706dc9f66a655d7",
+          "message": "Improved security for data storage",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-11-23 12:36:58.436847"
+        },
+        {
+          "hash": "f0c8e2e1f83d30f14b6cc71adf0d3849fe943ad4",
+          "message": "Updated API responses for consistency",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2024-01-30 18:26:43.512240"
+        },
+        {
+          "hash": "dc68bf572dbf2d9fe1dcea5bdf755d6a26d40d0b",
+          "message": "Improved error handling in API endpoints",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-01-10 09:12:33.741858"
+        },
+        {
+          "hash": "1f5e28fa1dff51c86cb1d003cdd5607085b4b386",
+          "message": "Fixed bug in authentication logic",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2023-08-08 06:19:37.735591"
+        },
+        {
+          "hash": "89471bbb8a0ed645c7f35396984d6f4a35dd516a",
+          "message": "Optimized database queries for performance",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-02-13 23:51:31.873138"
+        },
+        {
+          "hash": "9991914b1a15f56b246831f64d0f8b52a95986a6",
+          "message": "Refactored user profile module",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-07-25 12:54:47.610195"
+        },
+        {
+          "hash": "da4553cd845092b249475fd5309c365cd5c003fa",
+          "message": "Added unit tests for new features",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-10-14 16:30:35.867233"
+        },
+        {
+          "hash": "830522315b45857e0a1e276026f0dc25a65079a3",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2024-06-29 01:57:59.942018"
+        },
+        {
+          "hash": "032429d80ad186de857b63b801ddf6a51e44df13",
+          "message": "Fixed typo in error messages",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-11-29 02:11:42.267773"
+        },
+        {
+          "hash": "93f6cf372e729cfbaec170cb09891c59b1e06ec1",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-07-25 23:14:04.813615"
+        },
+        {
+          "hash": "e3cece6b833fb1143791c372a90e71c0abf56fdd",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-03-31 15:49:13.839209"
+        },
+        {
+          "hash": "fb61faff7ba5a0266c2b740ef9a04da05ddda2a9",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-10-10 02:09:41.440357"
+        },
+        {
+          "hash": "2c3c50deedf443e31d7a431383f6787a5aff27d9",
+          "message": "Fixed bug in authentication logic",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-07-22 03:26:15.988209"
+        },
+        {
+          "hash": "339a08ad6af026f9290ada3483d1c53649c94ef6",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-10-08 02:12:29.455225"
+        },
+        {
+          "hash": "336eaa284f1e60168edafbb1873104576c07457e",
+          "message": "Resolved issue with session management",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2024-03-02 06:53:33.675691"
+        },
+        {
+          "hash": "bb56a7d0619dbb600c9215548b106e5e4e302447",
+          "message": "Implemented new payment gateway integration",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-03-15 07:20:08.116531"
+        },
+        {
+          "hash": "4965c9107d5a7e4f89d1487898ff05d2887c5403",
+          "message": "Added support for new user roles",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-09-25 07:45:20.637523"
+        },
+        {
+          "hash": "96846049635135aad39b6a82bd4a7c4adcbceda6",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-06-23 22:34:24.974547"
+        },
+        {
+          "hash": "2b0573fe248f8b2bb9dd4b950c5d2ea3b14882b4",
+          "message": "Added logging for debugging purposes",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-01-30 09:13:48.586144"
+        },
+        {
+          "hash": "034d435340af822828b7b524c165667a4a955c14",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-05-01 03:40:32.480619"
+        },
+        {
+          "hash": "00842ec4bcdd9a2bdb4e2608cb639cb9d0513842",
+          "message": "Implemented new payment gateway integration",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2024-04-16 22:52:24.336198"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Homer Simpson",
+          "email": "homer.simpson@springfield.com"
+        },
+        {
+          "name": "Marge Simpson",
+          "email": "marge.simpson@springfield.com"
+        },
+        {
+          "name": "Bart Simpson",
+          "email": "bart.simpson@springfield.com"
+        },
+        {
+          "name": "Lisa Simpson",
+          "email": "lisa.simpson@springfield.com"
+        },
+        {
+          "name": "Maggie Simpson",
+          "email": "maggie.simpson@springfield.com"
+        },
+        {
+          "name": "Ned Flanders",
+          "email": "ned.flanders@springfield.com"
+        },
+        {
+          "name": "Milhouse Van Houten",
+          "email": "milhouse.van.houten@springfield.com"
+        },
+        {
+          "name": "Ralph Wiggum",
+          "email": "ralph.wiggum@springfield.com"
+        },
+        {
+          "name": "Mr. Burns",
+          "email": "mr..burns@springfield.com"
+        },
+        {
+          "name": "Waylon Smithers",
+          "email": "waylon.smithers@springfield.com"
+        },
+        {
+          "name": "Apu Nahasapeemapetilon",
+          "email": "apu.nahasapeemapetilon@springfield.com"
+        },
+        {
+          "name": "Edna Krabappel",
+          "email": "edna.krabappel@springfield.com"
+        },
+        {
+          "name": "Chief Wiggum",
+          "email": "chief.wiggum@springfield.com"
+        },
+        {
+          "name": "Comic Book Guy",
+          "email": "comic.book.guy@springfield.com"
+        },
+        {
+          "name": "Krusty the Clown",
+          "email": "krusty.the.clown@springfield.com"
+        },
+        {
+          "name": "Sideshow Bob",
+          "email": "sideshow.bob@springfield.com"
+        },
+        {
+          "name": "Lenny Leonard",
+          "email": "lenny.leonard@springfield.com"
+        },
+        {
+          "name": "Carl Carlson",
+          "email": "carl.carlson@springfield.com"
+        },
+        {
+          "name": "Patty Bouvier",
+          "email": "patty.bouvier@springfield.com"
+        },
+        {
+          "name": "Selma Bouvier",
+          "email": "selma.bouvier@springfield.com"
+        },
+        {
+          "name": "Reverend Lovejoy",
+          "email": "reverend.lovejoy@springfield.com"
+        },
+        {
+          "name": "Kent Brockman",
+          "email": "kent.brockman@springfield.com"
+        },
+        {
+          "name": "Mayor Quimby",
+          "email": "mayor.quimby@springfield.com"
+        },
+        {
+          "name": "Itchy",
+          "email": "itchy@springfield.com"
+        }
+      ],
+      "repositories": [
+        {
+          "name": "Springfield Nuclear Plant",
+          "description": "Springfield Nuclear Plant safety and operations"
+        }
+      ]
+    },
+    "1": {
+      "commits": [
+        {
+          "hash": "aac86256768cf2faf457f1dd00cb87abb25b23c9",
+          "message": "Fixed bug in authentication logic",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-03-04 11:35:44.684429"
+        },
+        {
+          "hash": "42fde40d27a318437514f83d2a0834a66aaf8d87",
+          "message": "Revised documentation for setup instructions",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-12-25 04:09:29.029424"
+        },
+        {
+          "hash": "c10dc52ba1e1c352871c2ddac0c66caa88e5b17c",
+          "message": "Optimized database queries for performance",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-08-21 16:14:12.929984"
+        },
+        {
+          "hash": "e3de466aabb6baaa387a6ed8d63c59a450c2f61c",
+          "message": "Resolved issue with session management",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-01-04 03:15:18.603596"
+        },
+        {
+          "hash": "c7819cb7f6d1c09677584e1acdcef5499476921f",
+          "message": "Improved error handling in API endpoints",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2024-01-09 15:36:43.412106"
+        },
+        {
+          "hash": "c5ee65abb31cb6da66ae6cf20a242d2be00b1319",
+          "message": "Improved error handling in API endpoints",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2022-07-28 02:11:58.401035"
+        },
+        {
+          "hash": "08ba680e1ed3b23bc3ae2a31220583ad3ce18251",
+          "message": "Added unit tests for new features",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-01-02 14:54:17.195422"
+        },
+        {
+          "hash": "1ef6c45c94fa3850b2e201ac475fdca72ea85f82",
+          "message": "Added unit tests for new features",
+          "description": "Resolved a critical issue where users could not log in under certain conditions.",
+          "commit_time": "2022-11-29 16:16:00.549666"
+        },
+        {
+          "hash": "9ffde12e012601f4e7ee1734bddd4856d982338d",
+          "message": "Fixed typo in error messages",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2023-01-10 19:25:52.798313"
+        },
+        {
+          "hash": "a11763c3736c1d6361f7b9b5ccb228e11724782f",
+          "message": "Fixed typo in error messages",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-08-23 01:40:57.373677"
+        },
+        {
+          "hash": "eb13a484cca5f6688419d3a1e73d0be0ef843d7b",
+          "message": "Added unit tests for new features",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-09-02 00:15:28.649638"
+        },
+        {
+          "hash": "26477ff6358b02da8d0d89f612b4e582f895dfbf",
+          "message": "Enhanced UI for better user experience",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-04-26 23:39:46.062147"
+        },
+        {
+          "hash": "315a9c35e737d9afb7ecbafb7cdc6e0af79ec39d",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2022-04-12 22:12:46.253001"
+        },
+        {
+          "hash": "80aea8b39407cf74a85befb46d0e3d8393d6a02c",
+          "message": "Optimized database queries for performance",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-11-06 22:30:31.044531"
+        },
+        {
+          "hash": "963e6e8df123d643df1e153f4953a1fddea38fe6",
+          "message": "Added unit tests for new features",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2022-12-19 03:59:57.836736"
+        },
+        {
+          "hash": "ec0f641cb3fe5d7536a94099badbebfb8bb4020d",
+          "message": "Implemented new payment gateway integration",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-04-26 02:52:34.573791"
+        },
+        {
+          "hash": "ef0728cfd0ef483ba64168c479665a2702305a58",
+          "message": "Enhanced UI for better user experience",
+          "description": "Cleaned up the codebase by removing deprecated methods and unused variables.",
+          "commit_time": "2023-10-16 01:35:20.608739"
+        },
+        {
+          "hash": "461d2ad9ce0b4ae764eb26b900f6fcaedf94b0e7",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2023-04-15 11:53:50.810170"
+        },
+        {
+          "hash": "d2e93b3b7231a95b8560792a78553a98514b4156",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-09-26 18:46:23.365181"
+        },
+        {
+          "hash": "97f4e75b65375b3bf42db3e133b003fe3bc75fab",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-05-19 10:05:02.845740"
+        },
+        {
+          "hash": "fa334441ed63909e2381b5f528116be3d63c4ce3",
+          "message": "Refactored user profile module",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2024-07-06 04:54:09.930952"
+        },
+        {
+          "hash": "c6e61a41f827adca1c1b1a8846eb8debe3f2cec5",
+          "message": "Added unit tests for new features",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-03-27 10:14:45.914647"
+        },
+        {
+          "hash": "845e3890e9a47b0a82a223022740efc5e31341c9",
+          "message": "Refactored user profile module",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-02-18 12:40:50.192704"
+        },
+        {
+          "hash": "52ee9d92522fbdc77b8683e6eb694e7d52fbd2dd",
+          "message": "Fixed bug in authentication logic",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-08-14 01:03:29.007804"
+        },
+        {
+          "hash": "df009e986713f75a7aae806b84131bdc8a19f2ad",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2023-06-01 00:20:24.812264"
+        },
+        {
+          "hash": "d6fc3365b579e661108147474c1e13fce981bad0",
+          "message": "Updated API responses for consistency",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-06-08 00:55:33.260755"
+        },
+        {
+          "hash": "a77f57828aff22e6a74427ac54bdebd64d82725b",
+          "message": "Improved security for data storage",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-04-29 23:42:27.143936"
+        },
+        {
+          "hash": "c995261295edb1c62a955496547c4ee32cd91ca3",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-06-09 05:36:05.908437"
+        },
+        {
+          "hash": "8db7ded94dd9a55e31b30d056814ae02e9cca39d",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-12-17 18:20:20.268937"
+        },
+        {
+          "hash": "62e3b605a7cb76155cc6cd376c726b5dc06b5f9d",
+          "message": "Added support for new user roles",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-05-29 04:38:12.834018"
+        },
+        {
+          "hash": "fc875bc45cf9b2f0862e75591546f641cb8e73e4",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2023-08-14 13:04:33.720860"
+        },
+        {
+          "hash": "f4eb2b68fcb357aed21a29bc145d8b846a139fc3",
+          "message": "Improved security for data storage",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-07-13 13:40:47.643657"
+        },
+        {
+          "hash": "827d3674bd3ca9dc00d64e5beae0c63da616f3c4",
+          "message": "Resolved issue with session management",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-09-18 05:15:57.564396"
+        },
+        {
+          "hash": "ab9d982a0313fd08dbf7bf0398fcdc24f1930abc",
+          "message": "Revised documentation for setup instructions",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-05-03 22:40:04.391454"
+        },
+        {
+          "hash": "4b954b65d10221358eb4d585b48c61153e528ce5",
+          "message": "Fixed bug in authentication logic",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-01-15 01:30:20.892398"
+        },
+        {
+          "hash": "b67fade00e64a7929d50d96184b9a29247e18048",
+          "message": "Revised documentation for setup instructions",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-08-11 09:58:32.184599"
+        },
+        {
+          "hash": "03841566d1e38dc27200e6f192618f637d127688",
+          "message": "Improved security for data storage",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-10-11 13:53:33.239410"
+        },
+        {
+          "hash": "51c137624b5eeb09bb0270a7a4182a4224fc4729",
+          "message": "Improved error handling in API endpoints",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2023-03-23 21:46:05.516081"
+        },
+        {
+          "hash": "6e944b2803dab7d46d4018553df22f0d2a4df422",
+          "message": "Updated CI/CD pipeline configuration",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2023-12-24 02:24:52.687756"
+        },
+        {
+          "hash": "d20359405225e0c449a4a213206a286c6b61b814",
+          "message": "Improved error handling in API endpoints",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-07-20 21:19:43.987658"
+        },
+        {
+          "hash": "ee54f267e610a11cfbbb37f26067fd55ae7e55fe",
+          "message": "Fixed typo in error messages",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2023-04-11 14:37:04.008519"
+        },
+        {
+          "hash": "5c64d1d3d1dbaf000903550efcab298ead671c8d",
+          "message": "Updated API responses for consistency",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-02-07 12:50:25.408564"
+        },
+        {
+          "hash": "ee67bcddda2534fef86cd6654e70c586ce323b7a",
+          "message": "Added logging for debugging purposes",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2024-06-06 16:53:02.321815"
+        },
+        {
+          "hash": "cfeb829f427b6618fbd784e4571cd76772ebef9d",
+          "message": "Enhanced UI for better user experience",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2023-06-09 14:44:32.565482"
+        },
+        {
+          "hash": "973b0a59c9f8581927bc2de5e4d7e0bfc42acfe3",
+          "message": "Fixed typo in error messages",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-07-16 07:46:22.897165"
+        },
+        {
+          "hash": "21b546ffc5f3ee0a1a790b58048845e03f59667e",
+          "message": "Updated API responses for consistency",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2023-07-14 17:00:20.524458"
+        },
+        {
+          "hash": "218284e76b23a7f9a71394acc2956c38d6a16b54",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-11-19 15:05:53.463452"
+        },
+        {
+          "hash": "e959fb54a96f5cbaaaf5530a51113129a808b44f",
+          "message": "Resolved compatibility issues with older browsers",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2024-03-31 14:07:43.423801"
+        },
+        {
+          "hash": "a2df51b98e05d7743b8c0fb9e4b1891ca1385308",
+          "message": "Resolved issue with session management",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2023-11-13 07:29:34.439516"
+        },
+        {
+          "hash": "02f3805d3493e7f8eae582db7863ac5fc115c3cf",
+          "message": "Revised documentation for setup instructions",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-09-30 13:09:44.492899"
+        },
+        {
+          "hash": "ece4ccf055594b242d6d4dd1f7d3e5d117235332",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Fixed a typo in error messages to provide clearer feedback to users.",
+          "commit_time": "2023-03-12 12:43:52.966121"
+        },
+        {
+          "hash": "5478e6d58a597e85ae6fec7d62268ec06525a796",
+          "message": "Enhanced UI for better user experience",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-04-25 02:01:45.252881"
+        },
+        {
+          "hash": "6df739e23a3384e2c72187c3ad4220b72115c708",
+          "message": "Implemented new payment gateway integration",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-10-02 09:17:04.024357"
+        },
+        {
+          "hash": "5bc168da4415c3a7ade3638c878542997051ef21",
+          "message": "Improved security for data storage",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2024-01-27 09:11:33.909678"
+        },
+        {
+          "hash": "92d167270b3a242c83ea0d396a12864cf4572fe0",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-01-28 02:47:30.869388"
+        },
+        {
+          "hash": "de87b21a39689c36ffd506a0ec6337729c71da47",
+          "message": "Enhanced UI for better user experience",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-04-09 22:47:17.398975"
+        },
+        {
+          "hash": "fccc76b2f117b0382632912f2c9dde88d52d9c7c",
+          "message": "Revised documentation for setup instructions",
+          "description": "Updated project dependencies to the latest versions and fixed resulting conflicts.",
+          "commit_time": "2022-05-20 08:14:16.025339"
+        },
+        {
+          "hash": "72d37f27dac02d064d18e86e0d91239e73887dfe",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2023-09-24 23:51:05.235492"
+        },
+        {
+          "hash": "e09fa5af1088af94b3941e861be28d0300bef2ea",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2024-04-10 15:18:35.143695"
+        },
+        {
+          "hash": "d672a12b7c8bbd2e8e1c0c3413531eb3a9aff44a",
+          "message": "Cleaned up code and removed deprecated methods",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-06-27 22:15:44.740816"
+        },
+        {
+          "hash": "cade61ce2ce3bd28d33fc44e2f9acb21b27fd86b",
+          "message": "Fixed typo in error messages",
+          "description": "Added support for new user roles, allowing for more granular access control.",
+          "commit_time": "2023-05-23 03:25:38.059666"
+        },
+        {
+          "hash": "948fa3cc90831e3c19f02d1746714fe1c585e271",
+          "message": "Refactored codebase to follow best practices",
+          "description": "Refactored the profile module for better maintainability and performance.",
+          "commit_time": "2024-05-16 04:49:31.946069"
+        },
+        {
+          "hash": "86729a7972c3e3068180868179da56fda804a32b",
+          "message": "Resolved issue with session management",
+          "description": "Enhanced error handling mechanisms in various API endpoints to provide more informative error messages.",
+          "commit_time": "2022-04-02 19:27:02.510726"
+        },
+        {
+          "hash": "c5a4a6d19144bdd25f6c64d48e712f0754e9cf7c",
+          "message": "Improved error handling in API endpoints",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2024-02-16 13:44:14.779036"
+        },
+        {
+          "hash": "1a9c05b5ad2979dcd0c577d240568eee2622cb19",
+          "message": "Implemented new payment gateway integration",
+          "description": "Revised the documentation to provide clearer setup instructions for new developers.",
+          "commit_time": "2022-07-12 15:52:02.899014"
+        },
+        {
+          "hash": "ee88c90191f8a22d14001ea0f9c3ae360012f36a",
+          "message": "Implemented new payment gateway integration",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2023-01-30 14:59:09.832178"
+        },
+        {
+          "hash": "06c957951a7a28879627fa245b2ff985e1e20b11",
+          "message": "Added support for new user roles",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-04-01 05:30:44.403293"
+        },
+        {
+          "hash": "7e1d27c4306ea0f823ceea7f9cee501a2fa85263",
+          "message": "Revised documentation for setup instructions",
+          "description": "Updated the CI/CD pipeline configuration to streamline the deployment process.",
+          "commit_time": "2022-07-06 20:26:00.382514"
+        },
+        {
+          "hash": "c2f992570ed2bdfeed677c353dec05bef5ec4c30",
+          "message": "Optimized database queries for performance",
+          "description": "Resolved issues with session management to prevent user sessions from expiring prematurely.",
+          "commit_time": "2022-06-02 03:13:14.454360"
+        },
+        {
+          "hash": "c82446372907eaa2ca65079c6a0ab8ee86ac6802",
+          "message": "Added unit tests for new features",
+          "description": "Added unit tests to ensure the stability and correctness of new features.",
+          "commit_time": "2022-05-13 04:24:58.305109"
+        },
+        {
+          "hash": "fdc683ffed938f2d5c36ec55ec91037d4d620557",
+          "message": "Added unit tests for new features",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-04-26 23:11:58.348648"
+        },
+        {
+          "hash": "09a04a4013ab40a62dfc778f1b8f3d789af3fba3",
+          "message": "Enhanced UI for better user experience",
+          "description": "Resolved compatibility issues with older browser versions to ensure broader support.",
+          "commit_time": "2022-01-23 20:39:08.006498"
+        },
+        {
+          "hash": "bc34bc50796629d7b2add904895140c003d825b2",
+          "message": "Improved security for data storage",
+          "description": "Added logging to aid in debugging and monitoring application behavior.",
+          "commit_time": "2023-03-12 08:43:56.056767"
+        },
+        {
+          "hash": "896000ab1cf1afc7047422282390064bb4fc8332",
+          "message": "Updated dependencies and resolved conflicts",
+          "description": "Improved the security measures for data storage to protect sensitive information.",
+          "commit_time": "2023-09-26 09:23:41.505030"
+        },
+        {
+          "hash": "0469c2e3efe24b7f416c385d7e5d1cd638c238e5",
+          "message": "Resolved issue with session management",
+          "description": "Refactored the entire codebase to adhere to modern best practices and coding standards.",
+          "commit_time": "2022-07-11 11:59:25.357304"
+        },
+        {
+          "hash": "6ec737e3f3ca745b2f783267732f9a7f104255b8",
+          "message": "Added unit tests for new features",
+          "description": "Improved the caching strategy to reduce load times and enhance performance.",
+          "commit_time": "2023-12-03 18:02:22.581056"
+        },
+        {
+          "hash": "11c6c6a6804ccb3fdc63a46c5049910435f93d9e",
+          "message": "Enhanced UI for better user experience",
+          "description": "Updated API responses to ensure consistency across different endpoints.",
+          "commit_time": "2022-10-06 17:38:17.112359"
+        },
+        {
+          "hash": "a0d0e6c5202b1201afe003b0c8d3d79dcd8f8e9e",
+          "message": "Improved caching strategy for faster load times",
+          "description": "Enhanced the user interface to provide a more intuitive and enjoyable experience.",
+          "commit_time": "2024-02-18 09:40:17.604592"
+        },
+        {
+          "hash": "7509d6c92e5773da77039fd44833f047bd27f0ea",
+          "message": "Enhanced UI for better user experience",
+          "description": "Optimized various database queries to improve application performance.",
+          "commit_time": "2022-09-07 09:32:33.223842"
+        },
+        {
+          "hash": "d0df8b516f521dba0026d620ede954be60f615cf",
+          "message": "Improved security for data storage",
+          "description": "Added support for a new payment gateway, enhancing transaction options for users.",
+          "commit_time": "2022-08-05 11:26:05.405923"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Homer Simpson",
+          "email": "homer.simpson@springfield.com"
+        },
+        {
+          "name": "Marge Simpson",
+          "email": "marge.simpson@springfield.com"
+        },
+        {
+          "name": "Bart Simpson",
+          "email": "bart.simpson@springfield.com"
+        },
+        {
+          "name": "Lisa Simpson",
+          "email": "lisa.simpson@springfield.com"
+        },
+        {
+          "name": "Maggie Simpson",
+          "email": "maggie.simpson@springfield.com"
+        },
+        {
+          "name": "Milhouse Van Houten",
+          "email": "milhouse.van.houten@springfield.com"
+        },
+        {
+          "name": "Nelson Muntz",
+          "email": "nelson.muntz@springfield.com"
+        },
+        {
+          "name": "Ralph Wiggum",
+          "email": "ralph.wiggum@springfield.com"
+        },
+        {
+          "name": "Mr. Burns",
+          "email": "mr..burns@springfield.com"
+        },
+        {
+          "name": "Waylon Smithers",
+          "email": "waylon.smithers@springfield.com"
+        },
+        {
+          "name": "Moe Szyslak",
+          "email": "moe.szyslak@springfield.com"
+        },
+        {
+          "name": "Apu Nahasapeemapetilon",
+          "email": "apu.nahasapeemapetilon@springfield.com"
+        },
+        {
+          "name": "Seymour Skinner",
+          "email": "seymour.skinner@springfield.com"
+        },
+        {
+          "name": "Edna Krabappel",
+          "email": "edna.krabappel@springfield.com"
+        },
+        {
+          "name": "Barney Gumble",
+          "email": "barney.gumble@springfield.com"
+        },
+        {
+          "name": "Chief Wiggum",
+          "email": "chief.wiggum@springfield.com"
+        },
+        {
+          "name": "Comic Book Guy",
+          "email": "comic.book.guy@springfield.com"
+        },
+        {
+          "name": "Krusty the Clown",
+          "email": "krusty.the.clown@springfield.com"
+        },
+        {
+          "name": "Sideshow Bob",
+          "email": "sideshow.bob@springfield.com"
+        },
+        {
+          "name": "Lenny Leonard",
+          "email": "lenny.leonard@springfield.com"
+        },
+        {
+          "name": "Carl Carlson",
+          "email": "carl.carlson@springfield.com"
+        },
+        {
+          "name": "Patty Bouvier",
+          "email": "patty.bouvier@springfield.com"
+        },
+        {
+          "name": "Kent Brockman",
+          "email": "kent.brockman@springfield.com"
+        },
+        {
+          "name": "Mayor Quimby",
+          "email": "mayor.quimby@springfield.com"
+        },
+        {
+          "name": "Itchy",
+          "email": "itchy@springfield.com"
+        },
+        {
+          "name": "Scratchy",
+          "email": "scratchy@springfield.com"
+        },
+        {
+          "name": "Troy McClure",
+          "email": "troy.mcclure@springfield.com"
+        }
+      ],
+      "repositories": [
+        {
+          "name": "Duff Brewery",
+          "description": "The official repository for Duff Brewery management system"
+        }
+      ]
+    }
+  }
+]
