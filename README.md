@@ -4,7 +4,7 @@
 
 - [ ] Create a sample project that highlights the power of Timescale's pgai extension, demonstrating the ability to
       vectorize data within PostgreSQL.
-- [ ] Create a sample project that highlights the power of Hasura DDN Pacha, allowing realtime authorized queries across
+- [ ] Create a sample project that highlights the power of Hasura DDN, allowing realtime authorized queries across
       data sources.
 
 ## Project architecture
@@ -60,17 +60,21 @@ volumes:
 However, this will also be our directory structure:
 
 ```tree
-timescale-pacha/
+realtime-vector/
+├── README.md
 ├── docker-compose.yaml
-├── hasura/
-│   ├── pacha/
-├── init-scripts/
-│   ├── mongodb/
-│   │   └── Dockerfile
-│   │   └── pull_requests.json
-│   └── timescaledb/
-│       └── seed.sql
-└── README.md
+├── hasura
+│   ├── app
+│   ├── compose.yaml
+│   ├── engine
+│   ├── globals
+│   ├── hasura.yaml
+│   ├── otel-collector-config.yaml
+│   └── supergraph.yaml
+├── init-scripts
+│   ├── mongodb
+│   └── timescaledb
+└── start.sh
 ```
 
 ### PostgreSQL
@@ -114,49 +118,80 @@ CREATE TABLE commit (
 
 ### MongoDB
 
+There are other collections present, but these are the two we care about for the purpose of this application:
+
 #### Pull Requests collection
 
-TODO: Update
+An example:
 
-### Pacha
+```json
+{
+  "_id": "64dbbcf123456789abcde012",
+  "created_at": "2024-08-09T12:34:56Z",
+  "description": "Updated the code to prevent Homer from eating the nuclear power plant's donuts.",
+  "developer": "lenny.leonard@sprinfield.com",
+  "pull_request_id": "PR-742",
+  "repository": "springfield_power_plant",
+  "status": "merged",
+  "title": "Fix Donut Consumption Bug",
+  "updated_at": "2024-08-09T14:00:00Z"
+}
+```
 
-Which has DDN under-the-hood.
+#### Commits collection
+
+```json
+{
+  "_id": "64dbcdf223456789abcde345",
+  "commit_time": "2024-08-09T15:45:00Z",
+  "description": "Refactored the codebase to optimize Springfield's traffic light system.",
+  "developer": "lisa.simpson@sprinfield.com",
+  "hash": "abcd1234efgh5678ijkl9101",
+  "message": "Optimized traffic light timings to reduce delays",
+  "pull_request_id": "PR-555",
+  "repository": "springfield_infrastructure"
+}
+```
+
+### Hasura DDN
+
+The [Hasura Data Delivery Network (DDN)](https://hasura.io/ddn) is an open-sourced method for developing composite APIs. You can create a GraphQL
+API on top of nearly any data source. And, you can connect multiple types of data sources together seamlessly.
+
+Why are we talking about it at an AI meet-up? Well, because you can also incorporate TypeScript (or Python) function
+directly into your API. This means you can call LLMs — such as OpenAI or, in this case, Ollama — and transform or enrich
+data from your API before it's returned to a client.
 
 ## Getting started
 
-### Step 1. Clone the repo
+### Step 1. Install dependencies
+
+- Docker
+- Hasura DDN CLI
+
+### Step 2. Clone the repo
 
 ```sh
 git clone https://github.com/Birmingham-AI/realtime-vector.git
 ```
 
-### Step 2. Build and run the images
+### Step 3. Build and run the images
 
-From the root of the project, and with the Docker daemon running, build the images and start them up in the background:
+From the root of the project, and with the Docker daemon running, build the images and start them up in the background
+using the `start.sh` script.
 
-```sh
-docker compose up -d
-```
-
-You can run `docker ps` to check and see that all services are running. Then, when done, run `docker compose down` to
-stop them.
-
-### Step 3. Interact with your DBs
-
-You can access Timescale using `psql` by running this command:
+First, make it executable:
 
 ```sh
-psql postgresql://postgres:postgres@localhost:5432/trading_db
+chmod +x ./start.sh
 ```
 
-And MongoDB by running:
+Then, run it:
 
 ```sh
-mongosh mongodb://127.0.0.1:27017/github_proxy
+./start.sh
 ```
 
-Then, query the `pull_requests` collection by running:
+### Step 3. Explore the API
 
-```sh
-db.pull_requests.find()
-```
+Click [here](https://console.hasura.io/local/graphql) to open the development console (Hasura's GUI) to explore the API.

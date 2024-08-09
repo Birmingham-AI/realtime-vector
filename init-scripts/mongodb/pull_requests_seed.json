@@ -1,0 +1,502 @@
+[
+    {
+        "pull_request_id": "f0d3ada5-4296-4600-9a9c-beb2abf4cf08",
+        "title": "Pull Request 1 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 1 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.591390",
+        "updated_at": "2024-08-09T14:19:01.591395",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "d1df4ecd-e840-4aac-ac49-23f324f20896",
+        "title": "Pull Request 2 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 2 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.591526",
+        "updated_at": "2024-08-09T14:19:01.591534",
+        "status": "open",
+        "developer": "lisa.simpson@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "6b00c997-254c-4b21-bb2a-022d8bb87e22",
+        "title": "Pull Request 3 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 3 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.591652",
+        "updated_at": "2024-08-09T14:19:01.591660",
+        "status": "open",
+        "developer": "ned.flanders@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "6bd6fa84-8902-47a5-a8ba-79694020b100",
+        "title": "Pull Request 4 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 4 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.591792",
+        "updated_at": "2024-08-09T14:19:01.591797",
+        "status": "open",
+        "developer": "milhouse.van.houten@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "333967e6-828b-41ef-ba04-cfc0ad21c055",
+        "title": "Pull Request 5 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 5 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.591956",
+        "updated_at": "2024-08-09T14:19:01.591960",
+        "status": "open",
+        "developer": "ralph.wiggum@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "87683305-c570-46e8-bf19-3d66f203e9ac",
+        "title": "Pull Request 6 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 6 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592026",
+        "updated_at": "2024-08-09T14:19:01.592033",
+        "status": "open",
+        "developer": "waylon.smithers@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "60c0a131-bb16-47c9-af48-bd51576d6505",
+        "title": "Pull Request 7 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 7 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592247",
+        "updated_at": "2024-08-09T14:19:01.592253",
+        "status": "open",
+        "developer": "seymour.skinner@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "066716ad-ca4c-4200-a8d4-2f37fdb4728c",
+        "title": "Pull Request 8 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 8 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592463",
+        "updated_at": "2024-08-09T14:19:01.592471",
+        "status": "open",
+        "developer": "barney.gumble@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "0f9a7361-c9c6-490b-b761-20c7c3c7f010",
+        "title": "Pull Request 9 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 9 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592719",
+        "updated_at": "2024-08-09T14:19:01.592724",
+        "status": "open",
+        "developer": "chief.wiggum@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "37ecce2e-6cc1-4e48-87bb-0e7f2d44161c",
+        "title": "Pull Request 10 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 10 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592804",
+        "updated_at": "2024-08-09T14:19:01.592808",
+        "status": "open",
+        "developer": "sideshow.bob@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "0286cfff-ee20-401e-8472-029f98f50067",
+        "title": "Pull Request 11 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 11 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592823",
+        "updated_at": "2024-08-09T14:19:01.592825",
+        "status": "open",
+        "developer": "patty.bouvier@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "ff20729a-1641-4b93-a222-e07eda3a9cd4",
+        "title": "Pull Request 12 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 12 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592843",
+        "updated_at": "2024-08-09T14:19:01.592844",
+        "status": "open",
+        "developer": "selma.bouvier@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "90bce2a2-fcb1-4ef6-ae0d-979f866e9d54",
+        "title": "Pull Request 13 for Kwik-E-Mart",
+        "description": "This is an auto-generated pull request 13 for the repository Kwik-E-Mart.",
+        "created_at": "2024-08-09T14:19:01.592854",
+        "updated_at": "2024-08-09T14:19:01.592855",
+        "status": "open",
+        "developer": "itchy@springfield.com",
+        "repository": "Kwik-E-Mart"
+    },
+    {
+        "pull_request_id": "ffe81797-94b4-45cf-b262-02f692429a00",
+        "title": "Pull Request 14 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 14 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.592899",
+        "updated_at": "2024-08-09T14:19:01.592903",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "d550a948-e48e-434e-af74-71090fc3448e",
+        "title": "Pull Request 15 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 15 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.592921",
+        "updated_at": "2024-08-09T14:19:01.592922",
+        "status": "open",
+        "developer": "marge.simpson@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "2d4192fc-212a-4b46-a18d-4a40d7ebacd3",
+        "title": "Pull Request 16 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 16 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.592942",
+        "updated_at": "2024-08-09T14:19:01.592943",
+        "status": "open",
+        "developer": "maggie.simpson@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "4fc9f319-7280-4882-903e-b76676257b81",
+        "title": "Pull Request 17 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 17 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593020",
+        "updated_at": "2024-08-09T14:19:01.593025",
+        "status": "open",
+        "developer": "ned.flanders@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "712e7cb6-2868-410e-9d50-e74ea64c206b",
+        "title": "Pull Request 18 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 18 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593044",
+        "updated_at": "2024-08-09T14:19:01.593045",
+        "status": "open",
+        "developer": "nelson.muntz@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "e51b5b4a-3d3c-4113-9666-817b474809e8",
+        "title": "Pull Request 19 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 19 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593052",
+        "updated_at": "2024-08-09T14:19:01.593054",
+        "status": "open",
+        "developer": "ralph.wiggum@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "2341e22a-fc23-460b-9a34-663060ddfa3d",
+        "title": "Pull Request 20 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 20 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593060",
+        "updated_at": "2024-08-09T14:19:01.593061",
+        "status": "open",
+        "developer": "waylon.smithers@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "915ba023-e235-4b01-8337-f2fbbc09667f",
+        "title": "Pull Request 21 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 21 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593074",
+        "updated_at": "2024-08-09T14:19:01.593077",
+        "status": "open",
+        "developer": "moe.szyslak@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "f2c85f7d-b803-4965-adbc-203dc47e2556",
+        "title": "Pull Request 22 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 22 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593165",
+        "updated_at": "2024-08-09T14:19:01.593168",
+        "status": "open",
+        "developer": "seymour.skinner@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "beadc8b4-c1a1-476c-a97b-7c96be4dfc3b",
+        "title": "Pull Request 23 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 23 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593185",
+        "updated_at": "2024-08-09T14:19:01.593187",
+        "status": "open",
+        "developer": "edna.krabappel@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "a23a4c5f-e158-432e-9a30-96a0a300a73d",
+        "title": "Pull Request 24 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 24 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593195",
+        "updated_at": "2024-08-09T14:19:01.593196",
+        "status": "open",
+        "developer": "chief.wiggum@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "38a4fc1e-6f54-4395-bcea-cc99ff1b3deb",
+        "title": "Pull Request 25 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 25 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593202",
+        "updated_at": "2024-08-09T14:19:01.593203",
+        "status": "open",
+        "developer": "sideshow.bob@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "4bdf12b9-a3a7-4cf1-aa5c-54251c2b5ef5",
+        "title": "Pull Request 26 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 26 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593210",
+        "updated_at": "2024-08-09T14:19:01.593211",
+        "status": "open",
+        "developer": "carl.carlson@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "b43f1e84-d490-4adc-8c96-cd117824d4df",
+        "title": "Pull Request 27 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 27 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593218",
+        "updated_at": "2024-08-09T14:19:01.593219",
+        "status": "open",
+        "developer": "patty.bouvier@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "c1de45ac-9ef7-4af1-8d00-6a22ef265d94",
+        "title": "Pull Request 28 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 28 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593229",
+        "updated_at": "2024-08-09T14:19:01.593230",
+        "status": "open",
+        "developer": "reverend.lovejoy@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "ac687c4d-6a03-437d-a690-32d8bed1e4a5",
+        "title": "Pull Request 29 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 29 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593238",
+        "updated_at": "2024-08-09T14:19:01.593239",
+        "status": "open",
+        "developer": "kent.brockman@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "4d8debc7-211e-4390-8a68-87659d90be34",
+        "title": "Pull Request 30 for Springfield Elementary",
+        "description": "This is an auto-generated pull request 30 for the repository Springfield Elementary.",
+        "created_at": "2024-08-09T14:19:01.593245",
+        "updated_at": "2024-08-09T14:19:01.593246",
+        "status": "open",
+        "developer": "itchy@springfield.com",
+        "repository": "Springfield Elementary"
+    },
+    {
+        "pull_request_id": "7e9e5300-54bb-42cd-af26-d06bb5c68425",
+        "title": "Pull Request 31 for Moes Tavern",
+        "description": "This is an auto-generated pull request 31 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593256",
+        "updated_at": "2024-08-09T14:19:01.593257",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "3e997f68-8f64-4b86-b956-054d404f0e1f",
+        "title": "Pull Request 32 for Moes Tavern",
+        "description": "This is an auto-generated pull request 32 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593265",
+        "updated_at": "2024-08-09T14:19:01.593266",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "c9896f19-dc60-411c-9305-3234ee698e13",
+        "title": "Pull Request 33 for Moes Tavern",
+        "description": "This is an auto-generated pull request 33 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593277",
+        "updated_at": "2024-08-09T14:19:01.593278",
+        "status": "open",
+        "developer": "maggie.simpson@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "6ce2beca-c5be-4500-8ee8-73ec48c92a35",
+        "title": "Pull Request 34 for Moes Tavern",
+        "description": "This is an auto-generated pull request 34 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593331",
+        "updated_at": "2024-08-09T14:19:01.593339",
+        "status": "open",
+        "developer": "milhouse.van.houten@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "061771ec-958e-4431-b6c5-e398ad615b93",
+        "title": "Pull Request 35 for Moes Tavern",
+        "description": "This is an auto-generated pull request 35 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593365",
+        "updated_at": "2024-08-09T14:19:01.593368",
+        "status": "open",
+        "developer": "ralph.wiggum@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "5f22831a-49d9-4258-b40a-a0eba90633ec",
+        "title": "Pull Request 36 for Moes Tavern",
+        "description": "This is an auto-generated pull request 36 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593384",
+        "updated_at": "2024-08-09T14:19:01.593387",
+        "status": "open",
+        "developer": "mr..burns@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "484b2c54-a6d9-4bbf-aaaf-830a6b09d1c9",
+        "title": "Pull Request 37 for Moes Tavern",
+        "description": "This is an auto-generated pull request 37 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593396",
+        "updated_at": "2024-08-09T14:19:01.593397",
+        "status": "open",
+        "developer": "apu.nahasapeemapetilon@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "248f7d89-d1d1-48b4-90f3-43f624896b6b",
+        "title": "Pull Request 38 for Moes Tavern",
+        "description": "This is an auto-generated pull request 38 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593406",
+        "updated_at": "2024-08-09T14:19:01.593408",
+        "status": "open",
+        "developer": "edna.krabappel@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "cca461c0-118d-4e62-9771-535b54385cfe",
+        "title": "Pull Request 39 for Moes Tavern",
+        "description": "This is an auto-generated pull request 39 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593422",
+        "updated_at": "2024-08-09T14:19:01.593424",
+        "status": "open",
+        "developer": "chief.wiggum@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "86be0d49-7db6-4a30-8955-02e0eea8642a",
+        "title": "Pull Request 40 for Moes Tavern",
+        "description": "This is an auto-generated pull request 40 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593431",
+        "updated_at": "2024-08-09T14:19:01.593432",
+        "status": "open",
+        "developer": "krusty.the.clown@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "4722f5cb-c209-4404-bd30-d8bc34a40701",
+        "title": "Pull Request 41 for Moes Tavern",
+        "description": "This is an auto-generated pull request 41 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593438",
+        "updated_at": "2024-08-09T14:19:01.593439",
+        "status": "open",
+        "developer": "lenny.leonard@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "31410f49-3028-4e65-9d6d-76dc57e9de50",
+        "title": "Pull Request 42 for Moes Tavern",
+        "description": "This is an auto-generated pull request 42 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593448",
+        "updated_at": "2024-08-09T14:19:01.593451",
+        "status": "open",
+        "developer": "carl.carlson@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "8b9009b5-633a-4bee-9eaa-70b16e354a53",
+        "title": "Pull Request 43 for Moes Tavern",
+        "description": "This is an auto-generated pull request 43 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593463",
+        "updated_at": "2024-08-09T14:19:01.593465",
+        "status": "open",
+        "developer": "kent.brockman@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "c92219a8-9b31-4df9-8b3b-11dc0ce4d7a0",
+        "title": "Pull Request 44 for Moes Tavern",
+        "description": "This is an auto-generated pull request 44 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593475",
+        "updated_at": "2024-08-09T14:19:01.593477",
+        "status": "open",
+        "developer": "itchy@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "6746ebe7-520d-4954-a53f-29d1cebb20b7",
+        "title": "Pull Request 45 for Moes Tavern",
+        "description": "This is an auto-generated pull request 45 for the repository Moes Tavern.",
+        "created_at": "2024-08-09T14:19:01.593490",
+        "updated_at": "2024-08-09T14:19:01.593493",
+        "status": "open",
+        "developer": "scratchy@springfield.com",
+        "repository": "Moes Tavern"
+    },
+    {
+        "pull_request_id": "78f8bb79-ce2c-4fd3-b1cb-5306b9725ba0",
+        "title": "Pull Request 46 for Springfield Nuclear Plant",
+        "description": "This is an auto-generated pull request 46 for the repository Springfield Nuclear Plant.",
+        "created_at": "2024-08-09T14:19:01.593507",
+        "updated_at": "2024-08-09T14:19:01.593509",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Springfield Nuclear Plant"
+    },
+    {
+        "pull_request_id": "dc1ec194-f0b2-4e9a-beef-40e56c14b28a",
+        "title": "Pull Request 47 for Springfield Nuclear Plant",
+        "description": "This is an auto-generated pull request 47 for the repository Springfield Nuclear Plant.",
+        "created_at": "2024-08-09T14:19:01.593520",
+        "updated_at": "2024-08-09T14:19:01.593522",
+        "status": "open",
+        "developer": "homer.simpson@springfield.com",
+        "repository": "Springfield Nuclear Plant"
+    },
+    {
+        "pull_request_id": "be61d7c4-9bae-415c-af15-9f74116de5fc",
+        "title": "Pull Request 48 for Springfield Nuclear Plant",
+        "description": "This is an auto-generated pull request 48 for the repository Springfield Nuclear Plant.",
+        "created_at": "2024-08-09T14:19:01.593531",
+        "updated_at": "2024-08-09T14:19:01.593533",
+        "status": "open",
+        "developer": "bart.simpson@springfield.com",
+        "repository": "Springfield Nuclear Plant"
+    },
+    {
+        "pull_request_id": "73448f32-16c9-40a8-b0d6-0bb721953b3e",
+        "title": "Pull Request 49 for Springfield Nuclear Plant",
+        "description": "This is an auto-generated pull request 49 for the repository Springfield Nuclear Plant.",
+        "created_at": "2024-08-09T14:19:01.593544",
+        "updated_at": "2024-08-09T14:19:01.593547",
+        "status": "open",
+        "developer": "lisa.simpson@springfield.com",
+        "repository": "Springfield Nuclear Plant"
+    },
+    {
+        "pull_request_id": "d6f54943-6f99-427e-9aa0-6ad2e34ec25a",
+        "title": "Pull Request 50 for Springfield Nuclear Plant",
+        "description": "This is an auto-generated pull request 50 for the repository Springfield Nuclear Plant.",
+        "created_at": "2024-08-09T14:19:01.593558",
+        "updated_at": "2024-08-09T14:19:01.593561",
+        "status": "open",
+        "developer": "milhouse.van.houten@springfield.com",
+        "repository": "Springfield Nuclear Plant"
+    }
+]

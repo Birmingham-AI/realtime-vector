@@ -1,0 +1,162 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Commits
+  fields:
+    - name: id
+      type: ObjectId!
+    - name: commitTime
+      type: String
+    - name: description
+      type: String
+    - name: developer
+      type: String
+    - name: hash
+      type: String
+    - name: message
+      type: String
+    - name: pullRequestId
+      type: String
+    - name: repository
+      type: String
+  graphql:
+    typeName: App_Commits
+    inputTypeName: App_CommitsInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: pull_requests
+      dataConnectorObjectType: commits
+      fieldMapping:
+        id:
+          column:
+            name: _id
+        commitTime:
+          column:
+            name: commit_time
+        description:
+          column:
+            name: description
+        developer:
+          column:
+            name: developer
+        hash:
+          column:
+            name: hash
+        message:
+          column:
+            name: message
+        pullRequestId:
+          column:
+            name: pull_request_id
+        repository:
+          column:
+            name: repository
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Commits
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - id
+          - commitTime
+          - description
+          - developer
+          - hash
+          - message
+          - pullRequestId
+          - repository
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: CommitsBoolExp
+  objectType: Commits
+  dataConnectorName: pull_requests
+  dataConnectorObjectType: commits
+  comparableFields:
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: commitTime
+      operators:
+        enableAll: true
+    - fieldName: description
+      operators:
+        enableAll: true
+    - fieldName: developer
+      operators:
+        enableAll: true
+    - fieldName: hash
+      operators:
+        enableAll: true
+    - fieldName: message
+      operators:
+        enableAll: true
+    - fieldName: pullRequestId
+      operators:
+        enableAll: true
+    - fieldName: repository
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_CommitsBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Commits
+  objectType: Commits
+  source:
+    dataConnectorName: pull_requests
+    collection: commits
+  filterExpressionType: CommitsBoolExp
+  orderableFields:
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: commitTime
+      orderByDirections:
+        enableAll: true
+    - fieldName: description
+      orderByDirections:
+        enableAll: true
+    - fieldName: developer
+      orderByDirections:
+        enableAll: true
+    - fieldName: hash
+      orderByDirections:
+        enableAll: true
+    - fieldName: message
+      orderByDirections:
+        enableAll: true
+    - fieldName: pullRequestId
+      orderByDirections:
+        enableAll: true
+    - fieldName: repository
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_commits
+    selectUniques:
+      - queryRootField: app_commitsById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_CommitsOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Commits
+  permissions:
+    - role: admin
+      select:
+        filter: null
+

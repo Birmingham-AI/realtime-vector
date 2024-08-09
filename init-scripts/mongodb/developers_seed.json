@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Homer Simpson",
+        "email": "homer.simpson@springfield.com"
+    },
+    {
+        "name": "Bart Simpson",
+        "email": "bart.simpson@springfield.com"
+    },
+    {
+        "name": "Lisa Simpson",
+        "email": "lisa.simpson@springfield.com"
+    },
+    {
+        "name": "Maggie Simpson",
+        "email": "maggie.simpson@springfield.com"
+    },
+    {
+        "name": "Ned Flanders",
+        "email": "ned.flanders@springfield.com"
+    },
+    {
+        "name": "Milhouse Van Houten",
+        "email": "milhouse.van.houten@springfield.com"
+    },
+    {
+        "name": "Nelson Muntz",
+        "email": "nelson.muntz@springfield.com"
+    },
+    {
+        "name": "Ralph Wiggum",
+        "email": "ralph.wiggum@springfield.com"
+    },
+    {
+        "name": "Mr. Burns",
+        "email": "mr..burns@springfield.com"
+    },
+    {
+        "name": "Waylon Smithers",
+        "email": "waylon.smithers@springfield.com"
+    },
+    {
+        "name": "Moe Szyslak",
+        "email": "moe.szyslak@springfield.com"
+    },
+    {
+        "name": "Apu Nahasapeemapetilon",
+        "email": "apu.nahasapeemapetilon@springfield.com"
+    },
+    {
+        "name": "Seymour Skinner",
+        "email": "seymour.skinner@springfield.com"
+    },
+    {
+        "name": "Edna Krabappel",
+        "email": "edna.krabappel@springfield.com"
+    },
+    {
+        "name": "Barney Gumble",
+        "email": "barney.gumble@springfield.com"
+    },
+    {
+        "name": "Chief Wiggum",
+        "email": "chief.wiggum@springfield.com"
+    },
+    {
+        "name": "Comic Book Guy",
+        "email": "comic.book.guy@springfield.com"
+    },
+    {
+        "name": "Krusty the Clown",
+        "email": "krusty.the.clown@springfield.com"
+    },
+    {
+        "name": "Sideshow Bob",
+        "email": "sideshow.bob@springfield.com"
+    },
+    {
+        "name": "Lenny Leonard",
+        "email": "lenny.leonard@springfield.com"
+    },
+    {
+        "name": "Patty Bouvier",
+        "email": "patty.bouvier@springfield.com"
+    },
+    {
+        "name": "Selma Bouvier",
+        "email": "selma.bouvier@springfield.com"
+    },
+    {
+        "name": "Reverend Lovejoy",
+        "email": "reverend.lovejoy@springfield.com"
+    },
+    {
+        "name": "Kent Brockman",
+        "email": "kent.brockman@springfield.com"
+    },
+    {
+        "name": "Mayor Quimby",
+        "email": "mayor.quimby@springfield.com"
+    },
+    {
+        "name": "Itchy",
+        "email": "itchy@springfield.com"
+    },
+    {
+        "name": "Scratchy",
+        "email": "scratchy@springfield.com"
+    },
+    {
+        "name": "Marge Simpson",
+        "email": "marge.simpson@springfield.com"
+    },
+    {
+        "name": "Carl Carlson",
+        "email": "carl.carlson@springfield.com"
+    },
+    {
+        "name": "Troy McClure",
+        "email": "troy.mcclure@springfield.com"
+    }
+]

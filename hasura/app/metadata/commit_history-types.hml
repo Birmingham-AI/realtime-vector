@@ -1,0 +1,72 @@
+---
+kind: ScalarType
+version: v1
+definition:
+  name: Timestamptz
+  graphql:
+    typeName: App_Timestamptz
+
+---
+kind: ScalarType
+version: v1
+definition:
+  name: Text
+  graphql:
+    typeName: App_Text
+
+---
+kind: ScalarType
+version: v1
+definition:
+  name: Int4
+  graphql:
+    typeName: App_Int4
+
+---
+kind: DataConnectorScalarRepresentation
+version: v1
+definition:
+  dataConnectorName: commit_history
+  dataConnectorScalarType: timestamptz
+  representation: Timestamptz
+  graphql:
+    comparisonExpressionTypeName: App_TimestamptzComparisonExp
+
+---
+kind: DataConnectorScalarRepresentation
+version: v1
+definition:
+  dataConnectorName: commit_history
+  dataConnectorScalarType: text
+  representation: Text
+  graphql:
+    comparisonExpressionTypeName: App_TextComparisonExp
+
+---
+kind: DataConnectorScalarRepresentation
+version: v1
+definition:
+  dataConnectorName: commit_history
+  dataConnectorScalarType: int4
+  representation: Int4
+  graphql:
+    comparisonExpressionTypeName: App_Int4ComparisonExp
+
+---
+kind: ScalarType
+version: v1
+definition:
+  name: Int8
+  graphql:
+    typeName: App_Int8
+
+---
+kind: DataConnectorScalarRepresentation
+version: v1
+definition:
+  dataConnectorName: commit_history
+  dataConnectorScalarType: int8
+  representation: Int8
+  graphql:
+    comparisonExpressionTypeName: App_Int8ComparisonExp
+

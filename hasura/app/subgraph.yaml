@@ -1,0 +1,26 @@
+kind: Subgraph
+version: v2
+definition:
+  name: app
+  generator:
+    rootPath: .
+  includePaths:
+    - metadata
+  envMapping:
+    APP_COMMIT_HISTORY_AUTHORIZATION_HEADER:
+      fromEnv: APP_COMMIT_HISTORY_AUTHORIZATION_HEADER
+    APP_COMMIT_HISTORY_READ_URL:
+      fromEnv: APP_COMMIT_HISTORY_READ_URL
+    APP_COMMIT_HISTORY_WRITE_URL:
+      fromEnv: APP_COMMIT_HISTORY_WRITE_URL
+    APP_PULL_REQUESTS_AUTHORIZATION_HEADER:
+      fromEnv: APP_PULL_REQUESTS_AUTHORIZATION_HEADER
+    APP_PULL_REQUESTS_READ_URL:
+      fromEnv: APP_PULL_REQUESTS_READ_URL
+    APP_PULL_REQUESTS_WRITE_URL:
+      fromEnv: APP_PULL_REQUESTS_WRITE_URL
+  connectors:
+    - path: connector/commit_history/connector.yaml
+      connectorLinkName: commit_history
+    - path: connector/pull_requests/connector.yaml
+      connectorLinkName: pull_requests

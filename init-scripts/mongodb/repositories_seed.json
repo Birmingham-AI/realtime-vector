@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Kwik-E-Mart",
+        "description": "Kwik-E-Mart inventory and POS system"
+    },
+    {
+        "name": "Springfield Elementary",
+        "description": "Springfield Elementary school management software"
+    },
+    {
+        "name": "Moes Tavern",
+        "description": "Moes Tavern customer and inventory management"
+    },
+    {
+        "name": "Springfield Nuclear Plant",
+        "description": "Springfield Nuclear Plant safety and operations"
+    }
+]

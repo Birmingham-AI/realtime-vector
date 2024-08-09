@@ -1,0 +1,201 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Commit
+  fields:
+    - name: commitTime
+      type: Timestamptz!
+    - name: createdAt
+      type: Timestamptz!
+    - name: description
+      type: Text!
+    - name: developerId
+      type: Int4
+    - name: hash
+      type: Text!
+    - name: id
+      type: Int4!
+    - name: message
+      type: Text!
+    - name: repositoryId
+      type: Int4
+  graphql:
+    typeName: App_Commit
+    inputTypeName: App_CommitInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: commit_history
+      dataConnectorObjectType: commit
+      fieldMapping:
+        commitTime:
+          column:
+            name: commit_time
+        createdAt:
+          column:
+            name: created_at
+        description:
+          column:
+            name: description
+        developerId:
+          column:
+            name: developer_id
+        hash:
+          column:
+            name: hash
+        id:
+          column:
+            name: id
+        message:
+          column:
+            name: message
+        repositoryId:
+          column:
+            name: repository_id
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Commit
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - commitTime
+          - createdAt
+          - description
+          - developerId
+          - hash
+          - id
+          - message
+          - repositoryId
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: CommitBoolExp
+  objectType: Commit
+  dataConnectorName: commit_history
+  dataConnectorObjectType: commit
+  comparableFields:
+    - fieldName: commitTime
+      operators:
+        enableAll: true
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: description
+      operators:
+        enableAll: true
+    - fieldName: developerId
+      operators:
+        enableAll: true
+    - fieldName: hash
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: message
+      operators:
+        enableAll: true
+    - fieldName: repositoryId
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_CommitBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Commit
+  objectType: Commit
+  source:
+    dataConnectorName: commit_history
+    collection: commit
+  filterExpressionType: CommitBoolExp
+  orderableFields:
+    - fieldName: commitTime
+      orderByDirections:
+        enableAll: true
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: description
+      orderByDirections:
+        enableAll: true
+    - fieldName: developerId
+      orderByDirections:
+        enableAll: true
+    - fieldName: hash
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: message
+      orderByDirections:
+        enableAll: true
+    - fieldName: repositoryId
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_commit
+    selectUniques:
+      - queryRootField: app_commitByHash
+        uniqueIdentifier:
+          - hash
+      - queryRootField: app_commitById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_CommitOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Commit
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: developer
+  sourceType: Commit
+  target:
+    model:
+      name: Developer
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: developerId
+      target:
+        modelField:
+          - fieldName: id
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: repository
+  sourceType: Commit
+  target:
+    model:
+      name: Repository
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: repositoryId
+      target:
+        modelField:
+          - fieldName: id
+
