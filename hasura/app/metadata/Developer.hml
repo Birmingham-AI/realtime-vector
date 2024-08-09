@@ -1,0 +1,152 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Developer
+  fields:
+    - name: createdAt
+      type: Timestamptz!
+    - name: email
+      type: Text!
+    - name: id
+      type: Int8!
+    - name: name
+      type: Text!
+  graphql:
+    typeName: App_Developer
+    inputTypeName: App_DeveloperInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: commit_history
+      dataConnectorObjectType: developer
+      fieldMapping:
+        createdAt:
+          column:
+            name: created_at
+        email:
+          column:
+            name: email
+        id:
+          column:
+            name: id
+        name:
+          column:
+            name: name
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Developer
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - createdAt
+          - email
+          - id
+          - name
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: DeveloperBoolExp
+  objectType: Developer
+  dataConnectorName: commit_history
+  dataConnectorObjectType: developer
+  comparableFields:
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: email
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_DeveloperBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Developer
+  objectType: Developer
+  source:
+    dataConnectorName: commit_history
+    collection: developer
+  filterExpressionType: DeveloperBoolExp
+  orderableFields:
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: email
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_developer
+    selectUniques:
+      - queryRootField: app_developerByEmail
+        uniqueIdentifier:
+          - email
+      - queryRootField: app_developerById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_DeveloperOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Developer
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: commits
+  sourceType: Developer
+  target:
+    model:
+      name: Commit
+      relationshipType: Array
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: id
+      target:
+        modelField:
+          - fieldName: developerId
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: pull_requests
+  sourceType: Developer
+  target:
+    model:
+      name: PullRequests
+      relationshipType: Array
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: email
+      target:
+        modelField:
+          - fieldName: developer

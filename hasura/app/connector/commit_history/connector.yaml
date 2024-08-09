@@ -1,0 +1,16 @@
+kind: Connector
+version: v2
+definition:
+  name: commit_history
+  subgraph: app
+  source: hasura/postgres:v1.0.1
+  context: .
+  envMapping:
+    CONNECTION_URI:
+      fromEnv: APP_COMMIT_HISTORY_CONNECTION_URI
+    HASURA_SERVICE_TOKEN_SECRET:
+      fromEnv: APP_COMMIT_HISTORY_HASURA_SERVICE_TOKEN_SECRET
+    OTEL_EXPORTER_OTLP_TRACES_ENDPOINT:
+      fromEnv: APP_COMMIT_HISTORY_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+    OTEL_SERVICE_NAME:
+      fromEnv: APP_COMMIT_HISTORY_OTEL_SERVICE_NAME

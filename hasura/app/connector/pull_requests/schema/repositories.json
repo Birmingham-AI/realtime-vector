@@ -1,0 +1,33 @@
+{
+  "name": "repositories",
+  "collections": {
+    "repositories": {
+      "type": "repositories"
+    }
+  },
+  "objectTypes": {
+    "repositories": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "description": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Repository
+  fields:
+    - name: createdAt
+      type: Timestamptz!
+    - name: description
+      type: Text
+    - name: id
+      type: Int4!
+    - name: name
+      type: Text!
+  graphql:
+    typeName: App_Repository
+    inputTypeName: App_RepositoryInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: commit_history
+      dataConnectorObjectType: repository
+      fieldMapping:
+        createdAt:
+          column:
+            name: created_at
+        description:
+          column:
+            name: description
+        id:
+          column:
+            name: id
+        name:
+          column:
+            name: name
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Repository
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - createdAt
+          - description
+          - id
+          - name
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: RepositoryBoolExp
+  objectType: Repository
+  dataConnectorName: commit_history
+  dataConnectorObjectType: repository
+  comparableFields:
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: description
+      operators:
+        enableAll: true
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_RepositoryBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Repository
+  objectType: Repository
+  source:
+    dataConnectorName: commit_history
+    collection: repository
+  filterExpressionType: RepositoryBoolExp
+  orderableFields:
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: description
+      orderByDirections:
+        enableAll: true
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_repository
+    selectUniques:
+      - queryRootField: app_repositoryByName
+        uniqueIdentifier:
+          - name
+      - queryRootField: app_repositoryById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_RepositoryOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Repository
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: commits
+  sourceType: Repository
+  target:
+    model:
+      name: Commit
+      relationshipType: Array
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: id
+      target:
+        modelField:
+          - fieldName: repositoryId
+

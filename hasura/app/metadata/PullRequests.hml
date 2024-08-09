@@ -1,0 +1,191 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: PullRequests
+  fields:
+    - name: id
+      type: ObjectId!
+    - name: createdAt
+      type: String
+    - name: description
+      type: String
+    - name: developer
+      type: String
+    - name: pullRequestId
+      type: String
+    - name: repository
+      type: String
+    - name: status
+      type: String
+    - name: title
+      type: String
+    - name: updatedAt
+      type: String
+  graphql:
+    typeName: App_PullRequests
+    inputTypeName: App_PullRequestsInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: pull_requests
+      dataConnectorObjectType: pull_requests
+      fieldMapping:
+        id:
+          column:
+            name: _id
+        createdAt:
+          column:
+            name: created_at
+        description:
+          column:
+            name: description
+        developer:
+          column:
+            name: developer
+        pullRequestId:
+          column:
+            name: pull_request_id
+        repository:
+          column:
+            name: repository
+        status:
+          column:
+            name: status
+        title:
+          column:
+            name: title
+        updatedAt:
+          column:
+            name: updated_at
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: PullRequests
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - id
+          - createdAt
+          - description
+          - developer
+          - pullRequestId
+          - repository
+          - status
+          - title
+          - updatedAt
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: PullRequestsBoolExp
+  objectType: PullRequests
+  dataConnectorName: pull_requests
+  dataConnectorObjectType: pull_requests
+  comparableFields:
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: createdAt
+      operators:
+        enableAll: true
+    - fieldName: description
+      operators:
+        enableAll: true
+    - fieldName: developer
+      operators:
+        enableAll: true
+    - fieldName: pullRequestId
+      operators:
+        enableAll: true
+    - fieldName: repository
+      operators:
+        enableAll: true
+    - fieldName: status
+      operators:
+        enableAll: true
+    - fieldName: title
+      operators:
+        enableAll: true
+    - fieldName: updatedAt
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_PullRequestsBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: PullRequests
+  objectType: PullRequests
+  source:
+    dataConnectorName: pull_requests
+    collection: pull_requests
+  filterExpressionType: PullRequestsBoolExp
+  orderableFields:
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: createdAt
+      orderByDirections:
+        enableAll: true
+    - fieldName: description
+      orderByDirections:
+        enableAll: true
+    - fieldName: developer
+      orderByDirections:
+        enableAll: true
+    - fieldName: pullRequestId
+      orderByDirections:
+        enableAll: true
+    - fieldName: repository
+      orderByDirections:
+        enableAll: true
+    - fieldName: status
+      orderByDirections:
+        enableAll: true
+    - fieldName: title
+      orderByDirections:
+        enableAll: true
+    - fieldName: updatedAt
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_pullRequests
+    selectUniques:
+      - queryRootField: app_pullRequestsById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_PullRequestsOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: PullRequests
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: commits
+  sourceType: PullRequests
+  target:
+    model:
+      name: Commits
+      relationshipType: Array
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: pullRequestId
+      target:
+        modelField:
+          - fieldName: pullRequestId

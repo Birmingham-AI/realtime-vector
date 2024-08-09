@@ -1,0 +1,68 @@
+{
+  "name": "commits",
+  "collections": {
+    "commits": {
+      "type": "commits"
+    }
+  },
+  "objectTypes": {
+    "commits": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "commit_time": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "description": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "developer": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "hash": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "message": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "pull_request_id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "repository": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

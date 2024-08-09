@@ -1,0 +1,75 @@
+{
+  "name": "pull_requests",
+  "collections": {
+    "pull_requests": {
+      "type": "pull_requests"
+    }
+  },
+  "objectTypes": {
+    "pull_requests": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "created_at": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "description": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "developer": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "pull_request_id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "repository": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "title": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updated_at": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
