@@ -9,11 +9,17 @@
 
 ## Getting started
 
+Below, you'll find some information to help get you started with this project. The steps will ensure you've installed
+all dependencies and will show you a finished API that leverages the various data sources running in containers.
+
+For the first part of the workshop, we'll focus on the TimescaleDB instance and running LLMs **directly** on data using SQL.
+After that, we'll take a look at how you can use LLMs directly via your API 🤙
+
 ### Step 1. Install dependencies
 
-- Docker
-- Hasura DDN CLI
-- Ollama installed and running model `llama3.1` locally
+- [Docker](https://docs.docker.com/engine/install/)
+- [Hasura DDN CLI](https://hasura.io/docs/3.0/cli/installation/)
+- [Ollama installed](https://ollama.com/download) and running the `llama3.1` model locally
 
 ### Step 2. Clone the repo
 
@@ -38,11 +44,11 @@ Then, run it:
 ./start.sh
 ```
 
-### Step 3. Explore the API
+### Step 4. Explore the API
 
 Click [here](https://console.hasura.io/local/graphql) to open the development console (Hasura's GUI) to explore the API.
 
-### Step 4. Clean up
+### Step 5. Clean up
 
 When you're ready to bring everything down, you can press `ctrl + c` in your terminal to kill the active process. Then,
 either manually stop all the docker containers or — if you're ~~lazy~~ efficient — use this script:
