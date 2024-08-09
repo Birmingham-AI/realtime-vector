@@ -1,13 +1,13 @@
 # pgai
 
-Bring AI models closer to your PostgreSQL data 
+Bring AI models closer to your PostgreSQL data
 
 [https://github.com/timescale/pgai](https://github.com/timescale/pgai)
 
-* Pgai is an open-source extension that brings more AI workflows to PostgreSQL, 
+- Pgai is an open-source extension that brings more AI workflows to PostgreSQL,
   making it easier for developers to build search and retrieval augmented generation (RAG) applications.
-* Ease of use: Create embeddings and do LLM reasoning directly within PostgreSQL.
-* Supports OpenAI, Anthropic Claude, Cohere and open-source models via Ollama.
+- Ease of use: Create embeddings and do LLM reasoning directly within PostgreSQL.
+- Supports OpenAI, Anthropic Claude, Cohere and open-source models via Ollama.
 
 ## Introduction
 
@@ -15,60 +15,60 @@ Bring AI models closer to your PostgreSQL data
 
 **John Pruitt**
 
-![John Pruitt](./images/jgpruitt.jpeg)
+![John Pruitt](../images/jgpruitt.jpeg)
 
-* [jgpruitt@gmail.com](mailto:jgpruitt@gmail.com)
-* [www.linkedin.com/in/jgpruitt](www.linkedin.com/in/jgpruitt)
-* Birmingham Native
-* Staff Software Engineer at [Timescale](https://www.timescale.com/) currently working on AI products
-  * pgai
-  * pgvectorscale
-* Formerly:
-  * Application Developer
-  * DBA
-  * Data Architect
-  * ETL Developer
-  * Technical Lead
-  * Engineering Manager
-  * Business Owner
-  * [Promscale](https://github.com/timescale/promscale) and its [extension](https://github.com/timescale/promscale_extension)
+- [jgpruitt@gmail.com](mailto:jgpruitt@gmail.com)
+- [www.linkedin.com/in/jgpruitt](www.linkedin.com/in/jgpruitt)
+- Birmingham Native
+- Staff Software Engineer at [Timescale](https://www.timescale.com/) currently working on AI products
+  - pgai
+  - pgvectorscale
+- Formerly:
+  - Application Developer
+  - DBA
+  - Data Architect
+  - ETL Developer
+  - Technical Lead
+  - Engineering Manager
+  - Business Owner
+  - [Promscale](https://github.com/timescale/promscale) and its [extension](https://github.com/timescale/promscale_extension)
 
 ### Timescale
 
 **[Timescale](https://www.timescale.com/) is Postgres made powerful**
 
-3.2M+ Timescale databases power apps across IoT, sensors, AI, dev tools, crypto, 
-and finance—all built on PostgreSQL. We use PostgreSQL for everything; we built 
+3.2M+ Timescale databases power apps across IoT, sensors, AI, dev tools, crypto,
+and finance—all built on PostgreSQL. We use PostgreSQL for everything; we built
 our cloud so you can too
 
-* [Cloud-hosted Postgres/Timescaledb](https://console.cloud.timescale.com/login)
-* [timescaledb](https://github.com/timescale/timescaledb) - Postgres for timeseries, events, and analytics
-* [pgai](https://github.com/timescale/pgai) - Postgres extension for interacting with LLMs directly from SQL
-* [pgvectorscale](https://github.com/timescale/pgvectorscale) - A complement to pgvector for high performance, cost-efficient vector search on large workloads.
+- [Cloud-hosted Postgres/Timescaledb](https://console.cloud.timescale.com/login)
+- [timescaledb](https://github.com/timescale/timescaledb) - Postgres for timeseries, events, and analytics
+- [pgai](https://github.com/timescale/pgai) - Postgres extension for interacting with LLMs directly from SQL
+- [pgvectorscale](https://github.com/timescale/pgvectorscale) - A complement to pgvector for high performance, cost-efficient vector search on large workloads.
 
 ### What is pgai?
 
-* An open-source postgres extension
-* Written (by me!) in SQL, Python, and plpython
-* Allows you to use LLM models directly from your postgres database via SQL
-* Build RAG, semantic search, and AI Agents with suite of PostgreSQL extensions for AI: pgvector, pgvectorscale and pgai.
-* Removes operational complexity of managing a separate vector database.
-* pgvector + pgvectorscale: Fast vector search at 100M+ vector scale, with time and metadata filter capabilities
-* Better Dev Experience: Multiple data type support, SQL query language, and PostgreSQL ecosystem.
-* Supports:
-  * OpenAI
-  * Ollama
-  * Anthropic
-  * Cohere
-  * More to come...
-* Roadmap:
-  * automatic embedding of database tables
-  * text-to-sql
-  * sql-to-text ;)
-* Motivation:
-  * I love SQL! ❤️
-  * I hate writing "plumbing code" to move data into and out of the database. ❌
-  * "Data has gravity" - don't move it any more than you have to
+- An open-source postgres extension
+- Written (by me!) in SQL, Python, and plpython
+- Allows you to use LLM models directly from your postgres database via SQL
+- Build RAG, semantic search, and AI Agents with suite of PostgreSQL extensions for AI: pgvector, pgvectorscale and pgai.
+- Removes operational complexity of managing a separate vector database.
+- pgvector + pgvectorscale: Fast vector search at 100M+ vector scale, with time and metadata filter capabilities
+- Better Dev Experience: Multiple data type support, SQL query language, and PostgreSQL ecosystem.
+- Supports:
+  - OpenAI
+  - Ollama
+  - Anthropic
+  - Cohere
+  - More to come...
+- Roadmap:
+  - automatic embedding of database tables
+  - text-to-sql
+  - sql-to-text ;)
+- Motivation:
+  - I love SQL! ❤️
+  - I hate writing "plumbing code" to move data into and out of the database. ❌
+  - "Data has gravity" - don't move it any more than you have to
 
 ### The Timescale AI "stack"
 
@@ -76,7 +76,7 @@ our cloud so you can too
 
 One database system for your AI application
 
-![The Timescale AI stack](./images/timescale_ai_stack.png)
+![The Timescale AI stack](../images/timescale_ai_stack.png)
 
 Tutorials, guides and explainers
 https://www.timescale.com/blog/tag/ai/
@@ -124,13 +124,13 @@ The `\dx` metacommand will show you the currently installed postgres extensions.
 
 ```text
                  List of installed extensions
-  Name   | Version |   Schema   |         Description          
+  Name   | Version |   Schema   |         Description
 ---------+---------+------------+------------------------------
  plpgsql | 1.0     | pg_catalog | PL/pgSQL procedural language
 (1 row)
 ```
 
-Install the pgai extension. The pgai extension depends on pgvector and plpython3u. 
+Install the pgai extension. The pgai extension depends on pgvector and plpython3u.
 The `cascade` option automatically installs these dependencies.
 
 ```postgresql
@@ -144,7 +144,7 @@ NOTICE:  installing required extension "vector"
 NOTICE:  installing required extension "plpython3u"
 CREATE EXTENSION
                                List of installed extensions
-    Name    | Version |   Schema   |                     Description                      
+    Name    | Version |   Schema   |                     Description
 ------------+---------+------------+------------------------------------------------------
  ai         | 0.3.0   | public     | helper functions for ai workflows
  plpgsql    | 1.0     | pg_catalog | PL/pgSQL procedural language
@@ -160,7 +160,7 @@ What functionality does pgai bring to postgres? The command below lists the comp
 ```
 
 ```text
-                                                                                                     Object description                                                                                                     
+                                                                                                     Object description
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  function anthropic_generate(text,jsonb,integer,text,text,double precision,integer,text,text,text[],double precision,jsonb,jsonb,integer,double precision)
  function cohere_chat_complete(text,text,text,text,jsonb,text,text,jsonb,boolean,jsonb,text,double precision,integer,integer,integer,double precision,integer,text[],double precision,double precision,jsonb,jsonb,boolean)
@@ -188,8 +188,8 @@ What functionality does pgai bring to postgres? The command below lists the comp
 (23 rows)
 ```
 
-We are going to use [Ollama](https://ollama.com/). I think of Ollama as 
-"Docker for LLM models". You can use Ollama to run open-source LLM models on 
+We are going to use [Ollama](https://ollama.com/). I think of Ollama as
+"Docker for LLM models". You can use Ollama to run open-source LLM models on
 your local machine. This is great for privacy and cost-savings.
 
 ### Setting up Ollama
@@ -204,12 +204,12 @@ container we can use it at will.
 docker compose exec ollama /bin/bash -c "ollama pull llama3"
 ```
 
-**NOTE: If you have Ollama installed on your host, and you'd rather use it 
+**NOTE: If you have Ollama installed on your host, and you'd rather use it
 (for performance), run `ollama pull llama3` instead.**
 
 ### Pointing pgai to Ollama
 
-Ollama is running in a separate docker container from our postgres database. 
+Ollama is running in a separate docker container from our postgres database.
 We need to tell pgai where to send http requests meant for Ollama.
 
 The Ollama functions in pgai will take a `_host` parameter, but that can be
@@ -232,7 +232,7 @@ from ollama_list_models()
 ;
 ```
 
-If we had not set the postgres session parameter, we could have run this instead, 
+If we had not set the postgres session parameter, we could have run this instead,
 which will produce the same results.
 
 ```postgresql
@@ -244,7 +244,7 @@ from ollama_list_models(_host=>'http://ollama:11434')
 We should see the `llama3` model that we pulled.
 
 ```text
-           name           |          model           |    size    |                              digest                              |  family   | format |     families      | parent_model | parameter_size | quantization_level |          modified_at          
+           name           |          model           |    size    |                              digest                              |  family   | format |     families      | parent_model | parameter_size | quantization_level |          modified_at
 --------------------------+--------------------------+------------+------------------------------------------------------------------+-----------+--------+-------------------+--------------+----------------+--------------------+-------------------------------
  llama3:latest            | llama3:latest            | 4661224676 | 365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1 | llama     | gguf   | ["llama"]         |              | 8.0B           | Q4_0               | 2024-06-12 21:28:38.49735+00
 (4 rows)
@@ -260,7 +260,7 @@ List our tables
 
 ```text
            List of relations
- Schema |    Name    | Type  |  Owner   
+ Schema |    Name    | Type  |  Owner
 --------+------------+-------+----------
  public | commit     | table | postgres
  public | developer  | table | postgres
@@ -278,12 +278,12 @@ Describe the `repository` table
 
 ```text
                                                                Table "public.repository"
-   Column    |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description 
+   Column    |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description
 -------------+--------------------------+-----------+----------+----------------------------------+----------+-------------+--------------+-------------
- id          | integer                  |           | not null | generated by default as identity | plain    |             |              | 
- name        | text                     |           | not null |                                  | extended |             |              | 
- description | text                     |           |          |                                  | extended |             |              | 
- created_at  | timestamp with time zone |           | not null | now()                            | plain    |             |              | 
+ id          | integer                  |           | not null | generated by default as identity | plain    |             |              |
+ name        | text                     |           | not null |                                  | extended |             |              |
+ description | text                     |           |          |                                  | extended |             |              |
+ created_at  | timestamp with time zone |           | not null | now()                            | plain    |             |              |
 Indexes:
     "repository_pkey" PRIMARY KEY, btree (id)
     "repository_name_key" UNIQUE CONSTRAINT, btree (name)
@@ -302,12 +302,12 @@ Describe the `developer` table
 
 ```text
                                                                Table "public.developer"
-   Column   |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description 
+   Column   |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description
 ------------+--------------------------+-----------+----------+----------------------------------+----------+-------------+--------------+-------------
- id         | bigint                   |           | not null | generated by default as identity | plain    |             |              | 
- name       | text                     |           | not null |                                  | extended |             |              | 
- email      | text                     |           | not null |                                  | extended |             |              | 
- created_at | timestamp with time zone |           | not null | now()                            | plain    |             |              | 
+ id         | bigint                   |           | not null | generated by default as identity | plain    |             |              |
+ name       | text                     |           | not null |                                  | extended |             |              |
+ email      | text                     |           | not null |                                  | extended |             |              |
+ created_at | timestamp with time zone |           | not null | now()                            | plain    |             |              |
 Indexes:
     "developer_pkey" PRIMARY KEY, btree (id)
     "developer_email_key" UNIQUE CONSTRAINT, btree (email)
@@ -326,16 +326,16 @@ Describe the `commit` table
 
 ```text
                                                                   Table "public.commit"
-    Column     |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description 
+    Column     |           Type           | Collation | Nullable |             Default              | Storage  | Compression | Stats target | Description
 ---------------+--------------------------+-----------+----------+----------------------------------+----------+-------------+--------------+-------------
- id            | integer                  |           | not null | generated by default as identity | plain    |             |              | 
- developer_id  | integer                  |           |          |                                  | plain    |             |              | 
- repository_id | integer                  |           |          |                                  | plain    |             |              | 
- hash          | text                     |           | not null |                                  | extended |             |              | 
- message       | text                     |           | not null |                                  | extended |             |              | 
- description   | text                     |           | not null |                                  | extended |             |              | 
- commit_time   | timestamp with time zone |           | not null |                                  | plain    |             |              | 
- created_at    | timestamp with time zone |           | not null | now()                            | plain    |             |              | 
+ id            | integer                  |           | not null | generated by default as identity | plain    |             |              |
+ developer_id  | integer                  |           |          |                                  | plain    |             |              |
+ repository_id | integer                  |           |          |                                  | plain    |             |              |
+ hash          | text                     |           | not null |                                  | extended |             |              |
+ message       | text                     |           | not null |                                  | extended |             |              |
+ description   | text                     |           | not null |                                  | extended |             |              |
+ commit_time   | timestamp with time zone |           | not null |                                  | plain    |             |              |
+ created_at    | timestamp with time zone |           | not null | now()                            | plain    |             |              |
 Indexes:
     "commit_pkey" PRIMARY KEY, btree (id)
     "commit_hash_key" UNIQUE CONSTRAINT, btree (hash)
@@ -365,7 +365,7 @@ limit 10
 ```
 
 ```text
-           name            |     name      |                   hash                   |                      message                      |          commit_time          
+           name            |     name      |                   hash                   |                      message                      |          commit_time
 ---------------------------+---------------+------------------------------------------+---------------------------------------------------+-------------------------------
  Kwik-E-Mart               | Homer Simpson | 3c1a9c61f52d92404b04134cb468653c3e244160 | Refactored codebase to follow best practices      | 2022-02-06 08:26:17.607709+00
  Springfield Elementary    | Homer Simpson | 816b0e13b8279f89a4083452f5e860e3eec455d3 | Added unit tests for new features                 | 2022-05-25 17:39:53.023563+00
@@ -395,7 +395,7 @@ select ollama_chat_complete
 ```
 
 ```text
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ollama_chat_complete                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ollama_chat_complete
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  {"done": true, "model": "llama3", "message": {"role": "assistant", "content": "In Alabama, June is typically a warm and humid summer month with temperatures gradually increasing as the season progresses. Here's what you can expect:\n\n1. Temperatures: Daytime highs usually range from 86°F (30°C) to 92°F (33°C), while nighttime lows range from 64°F (18°C) to 70°F (21°C).\n2. Humidity: June is known for its high humidity, with an average relative humidity of 67%. This can make the temperature feel even hotter.\n3. Sunshine: Alabama receives plenty of sunshine in June, with an average of 9-10 hours of direct sunlight per day.\n4. Rainfall: June is a relatively dry month in Alabama, with an average rainfall of around 4-5 inches (10-13 cm) statewide. However, occasional thunderstorms can still occur.\n5. Storms: As the state experiences more warm and humid air from the Gulf of Mexico, thunderstorms become more frequent during this time. These storms can bring heavy rain, strong winds, and occasional tornadoes.\n\nRegional Variations:\n\n* The northern part of Alabama (e.g., Huntsville) tends to be slightly cooler than the southern regions (e.g., Mobile), with average highs in the mid-80s (29°C).\n* The central region (e.g., Birmingham) typically experiences temperatures similar to those mentioned above, while the Gulf Coast cities (e.g., Gulf Shores) tend to be warmer due to their proximity to the ocean.\n\nOverall, June is a great time to enjoy outdoor activities in Alabama, such as swimming, fishing, or hiking. Just remember to stay hydrated and take breaks in shaded areas to avoid heat exhaustion."}, "created_at": "2024-08-09T18:01:07.844742Z", "eval_count": 347, "done_reason": "stop", "eval_duration": 10403567000, "load_duration": 37575042, "total_duration": 10755150375, "prompt_eval_count": 31, "prompt_eval_duration": 311400000}
 (1 row)
@@ -417,7 +417,7 @@ select jsonb_pretty
 ```
 
 ```text
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              jsonb_pretty                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              jsonb_pretty
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     +
      "done": true,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     +
@@ -438,7 +438,7 @@ select jsonb_pretty
 (1 row)
 ```
 
-What if we only what the "answer" without all the "fluff"? We can use jsonb 
+What if we only what the "answer" without all the "fluff"? We can use jsonb
 operators (`->` and `->>`) to pull the answer out of the jsonb object.
 
 ```postgresql
@@ -453,7 +453,7 @@ select ollama_chat_complete
 ```
 
 ```text
-                                                                                                          ?column?                                                                                                          
+                                                                                                          ?column?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Alabama in June! That's a great time to be there!                                                                                                                                                                         +
                                                                                                                                                                                                                            +
@@ -496,7 +496,7 @@ limit 4
 ```
 
 ```text
-                   hash                   |          commit_time          |      name       |                   message                   |                                 description                                  
+                   hash                   |          commit_time          |      name       |                   message                   |                                 description
 ------------------------------------------+-------------------------------+-----------------+---------------------------------------------+------------------------------------------------------------------------------
  246cbab5c418e2075f50122a8ed167fcd73e5d6b | 2024-01-02 09:54:18.681702+00 | Selma Bouvier   | Enhanced UI for better user experience      | Cleaned up the codebase by removing deprecated methods and unused variables.
  36ee79ca21972c76de55ac74ce0dabc83a90a4ac | 2024-02-03 18:15:49.475783+00 | Moe Szyslak     | Updated dependencies and resolved conflicts | Fixed a typo in error messages to provide clearer feedback to users.
@@ -505,7 +505,7 @@ limit 4
 (4 rows)
 ```
 
-````postgresql
+```postgresql
 select count(*)
 from "commit" c
 inner join developer d on (c.developer_id = d.id)
@@ -513,10 +513,10 @@ inner join repository r on (c.repository_id = r.id)
 where r.name = 'Springfield Elementary'
 and c.commit_time >= '2024-01-01'::timestamptz
 ;
-````
+```
 
 ```text
- count 
+ count
 -------
     23
 (1 row)
@@ -543,7 +543,7 @@ limit 3
 ```
 
 ```text
-                                                   concat                                                   
+                                                   concat
 ------------------------------------------------------------------------------------------------------------
  * commit: a6306af9b122866bb92641b4fbdbeeab2337056d                                                        +
    date: 2022-01-10 08:50:24.868115+00                                                                     +
@@ -589,7 +589,7 @@ from
 ```
 
 ```text
-                                                        commits                                                         
+                                                        commits
 ------------------------------------------------------------------------------------------------------------------------
  * commit: a6306af9b122866bb92641b4fbdbeeab2337056d                                                                    +
    date: 2022-01-10 08:50:24.868115+00                                                                                 +
@@ -656,12 +656,12 @@ select ollama_chat_complete
     )
   )
 )->'message'->>'content'
-from commits 
+from commits
 ;
 ```
 
 ```text
-                                                       ?column?                                                        
+                                                       ?column?
 -----------------------------------------------------------------------------------------------------------------------
  A list of commits from the "Springfield Elementary" git repository! Let me summarize the changes made by each commit:+
                                                                                                                       +
@@ -697,10 +697,9 @@ from commits
 (1 row)
 ```
 
-**NOTE: You are likely to get a different answer each time you run the query. 
+**NOTE: You are likely to get a different answer each time you run the query.
 Different LLM models may produce better or worse results. Experimentation with
 the models and prompts is key.**
-
 
 ## Further exploration
 
@@ -708,15 +707,13 @@ We have just scratched the surface of what you can do in postgres for AI workloa
 There is so much more to pgai and postgres as a vector database. Check out some of
 the content below I have contributed to for further exploration.
 
-* [Build search and RAG systems on PostgreSQL using Cohere and pgai](https://www.timescale.com/blog/build-search-and-rag-systems-on-postgresql-using-cohere-and-pgai/)
-* [Use Anthropic Claude Sonnet 3.5 in PostgreSQL With Pgai](https://www.timescale.com/blog/use-anthropic-claude-sonnet-3-5-in-postgresql-with-pgai/)
-* [Use Open-Source LLMs in PostgreSQL With Ollama and Pgai](https://www.timescale.com/blog/use-open-source-llms-in-postgresql-with-ollama-and-pgai/)
-* [PostgreSQL and Pgvector: Now Faster Than Pinecone, 75% Cheaper, and 100% Open Source](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)
-* [Making PostgreSQL a Better AI Database](https://www.timescale.com/blog/making-postgresql-a-better-ai-database/)
-* [Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison](https://www.timescale.com/blog/pgvector-vs-pinecone/)
-* [Pgai: Giving PostgreSQL Developers AI Engineering Superpowers](https://www.timescale.com/blog/pgai-giving-postgresql-developers-ai-engineering-superpowers/)
-* [Refining Vector Search Queries With Time Filters in Pgvector: A Tutorial](https://www.timescale.com/blog/refining-vector-search-queries-with-time-filters-in-pgvector-a-tutorial/)
-* [PostgresFM ep.101 pgvectorscale](https://www.youtube.com/live/dX6xbManLZw?si=5EZXUVYPplYxdqf8)
-* [pgvector and Timescale Vector: Up and Running with PostgreSQL as a Vector Database](https://youtu.be/JDVU0k30cGA?si=642rYfinR_PHzG8y)
-
-
+- [Build search and RAG systems on PostgreSQL using Cohere and pgai](https://www.timescale.com/blog/build-search-and-rag-systems-on-postgresql-using-cohere-and-pgai/)
+- [Use Anthropic Claude Sonnet 3.5 in PostgreSQL With Pgai](https://www.timescale.com/blog/use-anthropic-claude-sonnet-3-5-in-postgresql-with-pgai/)
+- [Use Open-Source LLMs in PostgreSQL With Ollama and Pgai](https://www.timescale.com/blog/use-open-source-llms-in-postgresql-with-ollama-and-pgai/)
+- [PostgreSQL and Pgvector: Now Faster Than Pinecone, 75% Cheaper, and 100% Open Source](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)
+- [Making PostgreSQL a Better AI Database](https://www.timescale.com/blog/making-postgresql-a-better-ai-database/)
+- [Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison](https://www.timescale.com/blog/pgvector-vs-pinecone/)
+- [Pgai: Giving PostgreSQL Developers AI Engineering Superpowers](https://www.timescale.com/blog/pgai-giving-postgresql-developers-ai-engineering-superpowers/)
+- [Refining Vector Search Queries With Time Filters in Pgvector: A Tutorial](https://www.timescale.com/blog/refining-vector-search-queries-with-time-filters-in-pgvector-a-tutorial/)
+- [PostgresFM ep.101 pgvectorscale](https://www.youtube.com/live/dX6xbManLZw?si=5EZXUVYPplYxdqf8)
+- [pgvector and Timescale Vector: Up and Running with PostgreSQL as a Vector Database](https://youtu.be/JDVU0k30cGA?si=642rYfinR_PHzG8y)
