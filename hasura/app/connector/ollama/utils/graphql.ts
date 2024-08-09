@@ -26,6 +26,16 @@ export const COMMITS_BY_DEV = `
 }
 `;
 
+export const COMMITS_BY_REPO = `
+query COMMITS_BY_REPO($repoName: String!) {
+  app_commits(where: {repository: {_eq: $repoName}}) {
+    message
+    description
+    developer
+  }
+}
+`;
+
 export async function fetchCommits(prId: string) {
   const response = await fetch(GRAPHQL_ENDPOINT, {
     method: "POST",
@@ -60,4 +70,22 @@ export async function fetchMyCommits(developerEmail: string) {
 
   const jsonResponse: any = await response.json();
   return jsonResponse.data.app_developerByEmail.commits;
+}
+
+export async function fetchCommitsByRepo(repoName: string) {
+  const response = await fetch(GRAPHQL_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: COMMITS_BY_REPO,
+      variables: {
+        repoName,
+      },
+    }),
+  });
+
+  const jsonResponse: any = await response.json();
+  return jsonResponse.data.app_commits;
 }

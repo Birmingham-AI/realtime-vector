@@ -1,0 +1,26 @@
+---
+kind: Command
+version: v1
+definition:
+  name: WriteReleaseNotes
+  outputType: String!
+  arguments:
+    - name: repoName
+      type: String!
+  source:
+    dataConnectorName: ollama
+    dataConnectorCommand:
+      function: writeReleaseNotes
+  graphql:
+    rootFieldName: app_writeReleaseNotes
+    rootFieldKind: Query
+
+---
+kind: CommandPermissions
+version: v1
+definition:
+  commandName: WriteReleaseNotes
+  permissions:
+    - role: admin
+      allowExecution: true
+

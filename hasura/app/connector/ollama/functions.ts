@@ -1,5 +1,5 @@
 import { ollama } from "./utils/ollama";
-import { fetchCommits, fetchMyCommits } from "./utils/graphql";
+import { fetchCommits, fetchMyCommits, fetchCommitsByRepo } from "./utils/graphql";
 
 /**
  * @readonly Exposes the function as an NDC function (the function should only query data without making modifications)
@@ -62,6 +62,33 @@ export async function summarizeMyImpact(developerEmail: string) {
   const llmResponse = await ollama.chat({
     model: "llama3.1",
     messages: [
+      {
+        role: "user",
+        content: prompt,
+      },
+    ],
+    stream: false,
+  });
+
+  return llmResponse.message.content;
+}
+
+/**
+ * @readonly
+ */
+export async function writeReleaseNotes(repoName: string) {
+  const commits = await fetchCommitsByRepo(repoName);
+
+  const prompt = `Below is a list of git commits made to a git repository for version v4.2.0. Write release notes in markdown format. Categorize the commits by either bug fixes, improvements, or new features. Summarize the changes without simply listing the commits themselves. Include a section at the bottom of the document thanking the authors who contributed to this release. Provide the release notes document only, with no additional exposition.
+${JSON.stringify(commits)}`;
+
+  const llmResponse = await ollama.chat({
+    model: "llama3.1",
+    messages: [
+      {
+        role: "system",
+        content: "You are an expert software release engineer who specializes in authoring release notes.",
+      },
       {
         role: "user",
         content: prompt,

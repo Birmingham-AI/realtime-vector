@@ -133,3 +133,20 @@ definition:
         modelField:
           - fieldName: repositoryId
 
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: write_release_notes
+  sourceType: Repository
+  target:
+    command:
+      name: WriteReleaseNotes
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: name
+      target:
+        argument:
+          argumentName: repoName
