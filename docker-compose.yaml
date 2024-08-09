@@ -2,12 +2,12 @@ services:
   ollama:
     image: ollama/ollama
     ports:
-      - "11435:11434"
+      - "11434:11434"
     volumes:
       - ollama_data:/root/.ollama
 
   timescaledb:
-    image: timescale/timescaledb:latest-pg16
+    image: timescale/timescaledb-ha:pg16-all
     ports:
       - "5432:5432"
     environment:
