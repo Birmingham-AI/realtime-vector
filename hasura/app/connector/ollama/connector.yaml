@@ -1,0 +1,20 @@
+kind: Connector
+version: v2
+definition:
+  name: ollama
+  subgraph: app
+  source: hasura/nodejs:v1.5.0
+  context: .
+  envMapping:
+    HASURA_CONNECTOR_PORT:
+      fromEnv: APP_OLLAMA_HASURA_CONNECTOR_PORT
+    HASURA_SERVICE_TOKEN_SECRET:
+      fromEnv: APP_OLLAMA_HASURA_SERVICE_TOKEN_SECRET
+    OTEL_EXPORTER_OTLP_TRACES_ENDPOINT:
+      fromEnv: APP_OLLAMA_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+    OTEL_SERVICE_NAME:
+      fromEnv: APP_OLLAMA_OTEL_SERVICE_NAME
+    OLLAMA_CONNECTION_URI:
+      fromEnv: APP_OLLAMA_CONNECTION_URI
+    GRAPHQL_ENDPOINT:
+      fromEnv: GRAPHQL_ENDPOINT

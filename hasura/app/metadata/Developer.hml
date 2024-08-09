@@ -114,7 +114,7 @@ definition:
     - role: admin
       select:
         filter: null
-
+        
 ---
 kind: Relationship
 version: v1
@@ -150,3 +150,37 @@ definition:
       target:
         modelField:
           - fieldName: developer
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: work_summary
+  sourceType: Developer
+  target:
+    command:
+      name: SummarizeMyWork
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: email
+      target:
+        argument:
+          argumentName: developerEmail
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: developer_impact
+  sourceType: Developer
+  target:
+    command:
+      name: SummarizeMyImpact
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: email
+      target:
+        argument:
+          argumentName: developerEmail

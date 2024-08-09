@@ -1,0 +1,10 @@
+---
+kind: DataConnectorScalarRepresentation
+version: v1
+definition:
+  dataConnectorName: ollama
+  dataConnectorScalarType: String
+  representation: String
+  graphql:
+    comparisonExpressionTypeName: App_StringComparisonExp_1
+
