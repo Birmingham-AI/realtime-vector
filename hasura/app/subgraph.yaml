@@ -13,6 +13,12 @@ definition:
       fromEnv: APP_COMMIT_HISTORY_READ_URL
     APP_COMMIT_HISTORY_WRITE_URL:
       fromEnv: APP_COMMIT_HISTORY_WRITE_URL
+    APP_OLLAMA_AUTHORIZATION_HEADER:
+      fromEnv: APP_OLLAMA_AUTHORIZATION_HEADER
+    APP_OLLAMA_READ_URL:
+      fromEnv: APP_OLLAMA_READ_URL
+    APP_OLLAMA_WRITE_URL:
+      fromEnv: APP_OLLAMA_WRITE_URL
     APP_PULL_REQUESTS_AUTHORIZATION_HEADER:
       fromEnv: APP_PULL_REQUESTS_AUTHORIZATION_HEADER
     APP_PULL_REQUESTS_READ_URL:
@@ -24,3 +30,5 @@ definition:
       connectorLinkName: commit_history
     - path: connector/pull_requests/connector.yaml
       connectorLinkName: pull_requests
+    - path: connector/ollama/connector.yaml
+      connectorLinkName: ollama

@@ -1,0 +1,26 @@
+---
+kind: Command
+version: v1
+definition:
+  name: SummarizePr
+  outputType: String!
+  arguments:
+    - name: prId
+      type: String!
+  source:
+    dataConnectorName: ollama
+    dataConnectorCommand:
+      function: summarizePR
+  graphql:
+    rootFieldName: app_summarizePr
+    rootFieldKind: Query
+
+---
+kind: CommandPermissions
+version: v1
+definition:
+  commandName: SummarizePr
+  permissions:
+    - role: admin
+      allowExecution: true
+

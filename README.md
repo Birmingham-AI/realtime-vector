@@ -1,11 +1,61 @@
-# Vectorizing Data with pgai in Timescale and Querying it with Hasura
+# Vector Data with Timescale and Hasura DDN
 
 ## Outcomes
 
-- [ ] Create a sample project that highlights the power of Timescale's pgai extension, demonstrating the ability to
+- [x] Create a sample project that highlights the power of Timescale's pgai extension, demonstrating the ability to
       vectorize data within PostgreSQL.
-- [ ] Create a sample project that highlights the power of Hasura DDN, allowing realtime authorized queries across
+- [x] Create a sample project that highlights the power of Hasura DDN, allowing realtime authorized queries across
       data sources.
+
+## Getting started
+
+### Step 1. Install dependencies
+
+- Docker
+- Hasura DDN CLI
+- Ollama installed and running model `llama3.1` locally
+
+### Step 2. Clone the repo
+
+```sh
+git clone https://github.com/Birmingham-AI/realtime-vector.git
+```
+
+### Step 3. Build and run the images
+
+From the root of the project, and with the Docker daemon running, build the images and start them up in the background
+using the `start.sh` script.
+
+First, make it executable:
+
+```sh
+chmod +x ./start.sh
+```
+
+Then, run it:
+
+```sh
+./start.sh
+```
+
+### Step 3. Explore the API
+
+Click [here](https://console.hasura.io/local/graphql) to open the development console (Hasura's GUI) to explore the API.
+
+### Step 4. Clean up
+
+When you're ready to bring everything down, you can press `ctrl + c` in your terminal to kill the active process. Then,
+either manually stop all the docker containers or — if you're ~~lazy~~ efficient — use this script:
+
+```sh
+chmod +x ./kill.sh
+```
+
+Then, execute it:
+
+```sh
+./kill.sh
+```
 
 ## Project architecture
 
@@ -76,6 +126,17 @@ realtime-vector/
 │   └── timescaledb
 └── start.sh
 ```
+
+### TimescaleDB with pgai
+
+### Hasura DDN
+
+The [Hasura Data Delivery Network (DDN)](https://hasura.io/ddn) is an open-sourced method for developing composite APIs. You can create a GraphQL
+API on top of nearly any data source. And, you can connect multiple types of data sources together seamlessly.
+
+Why are we talking about it at an AI meet-up? Well, because you can also incorporate TypeScript (or Python) function
+directly into your API. This means you can call LLMs — such as OpenAI or, in this case, Ollama — and transform or enrich
+data from your API before it's returned to a client.
 
 ### PostgreSQL
 
@@ -152,46 +213,3 @@ An example:
   "repository": "springfield_infrastructure"
 }
 ```
-
-### Hasura DDN
-
-The [Hasura Data Delivery Network (DDN)](https://hasura.io/ddn) is an open-sourced method for developing composite APIs. You can create a GraphQL
-API on top of nearly any data source. And, you can connect multiple types of data sources together seamlessly.
-
-Why are we talking about it at an AI meet-up? Well, because you can also incorporate TypeScript (or Python) function
-directly into your API. This means you can call LLMs — such as OpenAI or, in this case, Ollama — and transform or enrich
-data from your API before it's returned to a client.
-
-## Getting started
-
-### Step 1. Install dependencies
-
-- Docker
-- Hasura DDN CLI
-
-### Step 2. Clone the repo
-
-```sh
-git clone https://github.com/Birmingham-AI/realtime-vector.git
-```
-
-### Step 3. Build and run the images
-
-From the root of the project, and with the Docker daemon running, build the images and start them up in the background
-using the `start.sh` script.
-
-First, make it executable:
-
-```sh
-chmod +x ./start.sh
-```
-
-Then, run it:
-
-```sh
-./start.sh
-```
-
-### Step 3. Explore the API
-
-Click [here](https://console.hasura.io/local/graphql) to open the development console (Hasura's GUI) to explore the API.

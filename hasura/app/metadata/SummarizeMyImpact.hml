@@ -1,0 +1,26 @@
+---
+kind: Command
+version: v1
+definition:
+  name: SummarizeMyImpact
+  outputType: String!
+  arguments:
+    - name: developerEmail
+      type: String!
+  source:
+    dataConnectorName: ollama
+    dataConnectorCommand:
+      function: summarizeMyImpact
+  graphql:
+    rootFieldName: app_summarizeMyImpact
+    rootFieldKind: Query
+
+---
+kind: CommandPermissions
+version: v1
+definition:
+  commandName: SummarizeMyImpact
+  permissions:
+    - role: admin
+      allowExecution: true
+

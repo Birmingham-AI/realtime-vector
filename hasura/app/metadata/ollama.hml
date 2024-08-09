@@ -1,0 +1,62 @@
+kind: DataConnectorLink
+version: v1
+definition:
+  name: ollama
+  url:
+    readWriteUrls:
+      read:
+        valueFromEnv: APP_OLLAMA_READ_URL
+      write:
+        valueFromEnv: APP_OLLAMA_WRITE_URL
+  headers:
+    Authorization:
+      valueFromEnv: APP_OLLAMA_AUTHORIZATION_HEADER
+  schema:
+    version: v0.1
+    schema:
+      scalar_types:
+        String:
+          representation:
+            type: string
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+      object_types: {}
+      collections: []
+      functions:
+        - name: summarizePR
+          arguments:
+            prId:
+              type:
+                type: named
+                name: String
+          result_type:
+            type: named
+            name: String
+        - name: summarizeMyWork
+          arguments:
+            developerEmail:
+              type:
+                type: named
+                name: String
+          result_type:
+            type: named
+            name: String
+        - name: summarizeMyImpact
+          arguments:
+            developerEmail:
+              type:
+                type: named
+                name: String
+          result_type:
+            type: named
+            name: String
+      procedures: []
+    capabilities:
+      version: 0.1.5
+      capabilities:
+        query:
+          variables: {}
+          nested_fields: {}
+        mutation: {}

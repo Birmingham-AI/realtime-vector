@@ -1,0 +1,29 @@
+---
+kind: Command
+version: v1
+definition:
+  name: SummarizeMyWork
+  outputType: String!
+  arguments:
+    - name: developerEmail
+      type: String!
+  source:
+    dataConnectorName: ollama
+    dataConnectorCommand:
+      function: summarizeMyWork
+  graphql:
+    rootFieldName: app_summarizeMyWork
+    rootFieldKind: Query
+
+---
+kind: CommandPermissions
+version: v1
+definition:
+  commandName: SummarizeMyWork
+  permissions:
+    - role: admin
+      allowExecution: true
+    - role: manager
+      allowExecution: false
+    - role: engineer
+      allowExecution: true
