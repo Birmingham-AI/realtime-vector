@@ -22,12 +22,23 @@ docker compose up -d &
 # Wait for everything to be up...
 wait
 
-# Build and start our Hasura engine and connectors
-(
-  cd hasura && HASURA_DDN_PAT=$(ddn auth print-pat) docker compose --env-file .env up --build -d
-) &
+# Login to Hasura DDN
+ddn auth login
 
-# Navigate to the Ollama connector and start it
-(
-  cd hasura/app/connector/ollama && ddn connector setenv --connector connector.yaml -- npm run start
-)
+# Wait for that to be resolved
+wait
+
+# Create a new build
+cd hasura && ddn supergraph build local
+
+# Build and start our Hasura engine and connectors
+HASURA_DDN_PAT=$(ddn auth print-pat) docker compose --env-file .env up --build -d
+
+# Navigate to the Ollama connector and install deps
+cd app/connector/ollama && npm i
+
+# Wait for everything to be installed
+wait
+
+# Then, start it
+ddn connector setenv --connector connector.yaml -- npm run start
