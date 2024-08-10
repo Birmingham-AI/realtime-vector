@@ -19,6 +19,7 @@ After that, we'll take a look at how you can use LLMs directly via your API 🤙
 
 - [Docker](https://docs.docker.com/engine/install/)
 - [Hasura DDN CLI](https://hasura.io/docs/3.0/cli/installation/)
+- A [totally-free-forever Hasura Cloud account](https://cloud.hasura.io/signup/new_user?redirect_url=https%3A%2F%2Fconsole.hasura.io%2Fprojects)
 - [Ollama installed](https://ollama.com/download) and running the `llama3.1` model locally
 
 ### Step 2. Clone the repo
