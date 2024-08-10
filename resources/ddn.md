@@ -19,7 +19,7 @@ Birmingham AI
 
 ---
 
-![width: 400px](../images/sponsors.png)
+![width: 400px](./images/sponsors.png)
 
 ---
 
@@ -57,4 +57,4 @@ Birmingham AI
 
 # We need YOU!
 
-![](../images/qr-code.png)
+![](./images/qr-code.png)

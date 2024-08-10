@@ -15,7 +15,7 @@ Bring AI models closer to your PostgreSQL data
 
 **John Pruitt**
 
-![John Pruitt](../images/jgpruitt.jpeg)
+![John Pruitt](./images/jgpruitt.jpeg)
 
 - [jgpruitt@gmail.com](mailto:jgpruitt@gmail.com)
 - [www.linkedin.com/in/jgpruitt](www.linkedin.com/in/jgpruitt)
@@ -76,7 +76,7 @@ our cloud so you can too
 
 One database system for your AI application
 
-![The Timescale AI stack](../images/timescale_ai_stack.png)
+![The Timescale AI stack](./images/timescale_ai_stack.png)
 
 Tutorials, guides and explainers
 https://www.timescale.com/blog/tag/ai/
