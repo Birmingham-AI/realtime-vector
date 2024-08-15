@@ -23,6 +23,12 @@ Birmingham AI
 
 ---
 
+# Follow us on GitHub for a chance to win free 🍻
+
+![width: 400px](./images/bhm_ai_qr_follow.png)
+
+---
+
 # Today's agenda
 
 1. 🍻 Have beers, network
