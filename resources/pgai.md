@@ -204,12 +204,18 @@ tedious. By setting a postgres session variable, we can avoid having to pass
 the URL in every function call.
 
 ```postgresql
+-- use this to point to ollama running in docker
 select set_config('ai.ollama_host', 'http://ollama:11434', false);
 ```
 
 **NOTE: If you have ollama running on your host machine and would rather use that
 (it may be faster), stop the ollama container and use `http://host.docker.internal:11434`
 for the `ai.ollama_host` setting in the above command.**
+
+```postgresql
+-- use this if you have ollama installed on your host machine
+select set_config('ai.ollama_host', 'http://host.docker.internal:11434', false);
+```
 
 Let's list the models in our ollama instance.
 
