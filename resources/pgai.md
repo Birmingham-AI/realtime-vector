@@ -715,7 +715,7 @@ the content below I have contributed to for further exploration.
 
 ## Extra credit
 
-### Embedding Generation
+### Embedding Generation & Semantic Search
 
 Generate and embedding for a commit using `nomic-embed-text`:
 
