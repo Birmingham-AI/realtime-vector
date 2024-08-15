@@ -1,13 +1,6 @@
 # pgai
 
-Bring AI models closer to your PostgreSQL data
-
 [https://github.com/timescale/pgai](https://github.com/timescale/pgai)
-
-- Pgai is an open-source extension that brings more AI workflows to PostgreSQL,
-  making it easier for developers to build search and retrieval augmented generation (RAG) applications.
-- Ease of use: Create embeddings and do LLM reasoning directly within PostgreSQL.
-- Supports OpenAI, Anthropic Claude, Cohere and open-source models via Ollama.
 
 ## Introduction
 
@@ -33,6 +26,19 @@ Bring AI models closer to your PostgreSQL data
   - Business Owner
   - [Promscale](https://github.com/timescale/promscale) and its [extension](https://github.com/timescale/promscale_extension)
 
+### The Timescale AI "stack"
+
+**PGAI: Open-source PostgreSQL stack for AI Applications**
+
+One database system for your AI application
+
+![The Timescale AI stack](./images/timescale_ai_stack.png)
+
+Tutorials, guides and explainers
+
+- https://www.timescale.com/blog/tag/ai/
+- https://www.timescale.com/ai
+
 ### What is pgai?
 
 - An open-source postgres extension
@@ -53,19 +59,7 @@ Bring AI models closer to your PostgreSQL data
   - I hate writing "plumbing code" to move data into and out of the database. ❌
   - "Data has gravity" - don't move it any more than you have to
 
-### The Timescale AI "stack"
-
-**PGAI: Open-source PostgreSQL stack for AI Applications**
-
-One database system for your AI application
-
-![The Timescale AI stack](./images/timescale_ai_stack.png)
-
-Tutorials, guides and explainers
-https://www.timescale.com/blog/tag/ai/
-https://www.timescale.com/ai
-
-#### pgvectorscale
+#### What is pgvectorscale?
 
 - An open-source postgres extension providing an advanced vector index
 - pgvector + pgvectorscale: Fast vector search at 100M+ vector scale, with time and metadata filter capabilities
