@@ -529,6 +529,7 @@ from "commit" c
 inner join developer d on (c.developer_id = d.id)
 inner join repository r on (c.repository_id = r.id)
 where r.name = 'Springfield Elementary'
+and c.commit_time >= '2024-01-01'::timestamptz
 order by c.commit_time
 limit 3
 ;
@@ -575,6 +576,7 @@ from
     inner join developer d on (c.developer_id = d.id)
     inner join repository r on (c.repository_id = r.id)
     where r.name = 'Springfield Elementary'
+    and c.commit_time >= '2024-01-01'::timestamptz
     order by c.commit_time
 ) x
 ;
@@ -624,6 +626,7 @@ with commits as
         inner join developer d on (c.developer_id = d.id)
         inner join repository r on (c.repository_id = r.id)
         where r.name = 'Springfield Elementary'
+        and c.commit_time >= '2024-01-01'::timestamptz
         order by c.commit_time
     ) x
 )
@@ -709,3 +712,148 @@ the content below I have contributed to for further exploration.
 - [Refining Vector Search Queries With Time Filters in Pgvector: A Tutorial](https://www.timescale.com/blog/refining-vector-search-queries-with-time-filters-in-pgvector-a-tutorial/)
 - [PostgresFM ep.101 pgvectorscale](https://www.youtube.com/live/dX6xbManLZw?si=5EZXUVYPplYxdqf8)
 - [pgvector and Timescale Vector: Up and Running with PostgreSQL as a Vector Database](https://youtu.be/JDVU0k30cGA?si=642rYfinR_PHzG8y)
+
+## Extra credit
+
+### Embedding Generation
+
+Generate and embedding for a commit using `nomic-embed-text`:
+
+```postgresql
+select ollama_embed
+( 'nomic-embed-text'
+, concat
+  ( '* commit: ', c.hash, E'\n'
+  , '  date: ', c.commit_time, E'\n'
+  , '  author: ', d.name, ' ', d.email, E'\n'
+  , '  message: ', c.message, E'\n'
+  , '  description: ', c.description
+  )
+)
+from "commit" c
+inner join developer d on (c.developer_id = d.id)
+inner join repository r on (c.repository_id = r.id)
+where r.name = 'Springfield Elementary'
+and c.commit_time >= '2024-01-01'::timestamptz
+limit 1
+;
+```
+
+How many dimensions in the vector?
+
+```postgresql
+select vector_dims
+( 
+  ollama_embed
+  ( 'nomic-embed-text'
+  , concat
+    ( '* commit: ', c.hash, E'\n'
+    , '  date: ', c.commit_time, E'\n'
+    , '  author: ', d.name, ' ', d.email, E'\n'
+    , '  message: ', c.message, E'\n'
+    , '  description: ', c.description
+    )
+  )
+)
+from "commit" c
+inner join developer d on (c.developer_id = d.id)
+inner join repository r on (c.repository_id = r.id)
+where r.name = 'Springfield Elementary'
+and c.commit_time >= '2024-01-01'::timestamptz
+limit 1
+;
+```
+
+```text
+┌─────────────┐
+│ vector_dims │
+├─────────────┤
+│         768 │
+└─────────────┘
+(1 row)
+```
+
+Create a table for the embeddings:
+
+```postgresql
+create table commit_embedding
+( id integer not null primary key references "commit" (id) on delete cascade
+, content text not null
+, embedding vector(768) not null
+);
+```
+
+Generate embeddings and store them into the table.
+
+```postgresql
+insert into commit_embedding(id, content, embedding)
+select
+  x.id
+, x.content
+, ollama_embed('nomic-embed-text', x.content)
+from
+(
+  select
+    c.id
+  , concat
+  ( '* commit: ', c.hash, E'\n'
+  , '  date: ', c.commit_time, E'\n'
+  , '  author: ', d.name, ' ', d.email, E'\n'
+  , '  message: ', c.message, E'\n'
+  , '  description: ', c.description
+  ) as content
+  from "commit" c
+  inner join developer d on (c.developer_id = d.id)
+  inner join repository r on (c.repository_id = r.id)
+  where r.name = 'Springfield Elementary'
+  and c.commit_time >= '2024-01-01'::timestamptz
+) x
+;
+```
+
+Create a HNSW index on the embeddings:
+
+```postgresql
+create index on commit_embedding using hnsw (embedding vector_cosine_ops);
+```
+
+Semantic search:
+
+```postgresql
+with q as materialized 
+(
+    -- embed our user query with the same model
+    select ollama_embed('nomic-embed-text', 'What commits improved security in storage?') as q
+)
+select
+  id
+, content
+, embedding <=> (select q.q from q) as distance
+from commit_embedding
+order by embedding <=> (select q.q from q) -- order by semantic distance
+limit 3 -- top 3 most similar results
+;
+```
+
+```text
+┌─────┬─────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────┐
+│ id  │                                           content                                           │      distance       │
+├─────┼─────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────┤
+│ 266 │ * commit: 1ef94a0f80f7826c2645fc8d92782ac60a14e2ab                                         ↵│ 0.29166626563587694 │
+│     │   date: 2024-07-01 02:19:14.85142+00                                                       ↵│                     │
+│     │   author: Carl Carlson carl.carlson@springfield.com                                        ↵│                     │
+│     │   message: Improved security for data storage                                              ↵│                     │
+│     │   description: Refactored the profile module for better maintainability and performance.    │                     │
+│ 169 │ * commit: 8022563bbad88b710948b2c2aa97fc5324fd3bb7                                         ↵│  0.3778342028163033 │
+│     │   date: 2024-02-13 22:29:55.911723+00                                                      ↵│                     │
+│     │   author: Seymour Skinner seymour.skinner@springfield.com                                  ↵│                     │
+│     │   message: Added logging for debugging purposes                                            ↵│                     │
+│     │   description: Added support for new user roles, allowing for more granular access control. │                     │
+│ 129 │ * commit: 0b61571264a54d8f770f9c107a819d16008238a9                                         ↵│  0.3790174472216358 │
+│     │   date: 2024-03-25 08:43:37.013702+00                                                      ↵│                     │
+│     │   author: Waylon Smithers waylon.smithers@springfield.com                                  ↵│                     │
+│     │   message: Refactored codebase to follow best practices                                    ↵│                     │
+│     │   description: Added support for new user roles, allowing for more granular access control. │                     │
+└─────┴─────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────┘
+(3 rows)
+```
