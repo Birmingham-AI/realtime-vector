@@ -136,6 +136,19 @@ realtime-vector/
 
 ### TimescaleDB with pgai
 
+[Timescale](https://www.timescale.com/) is Postgres made powerful.
+
+3.2M+ Timescale databases power apps across IoT, sensors, AI, dev tools, crypto,
+and finance—all built on PostgreSQL. We use PostgreSQL for everything; we built
+our cloud so you can too.
+
+* Timescale is [cloud-hosted Postgres](https://www.timescale.com/cloud). 
+* [Timescaledb](https://www.timescale.com/products) is a Postgres extension for timeseries, events,
+and analytics workloads.
+* [pgai](https://www.timescale.com/ai) is a stack of Postgres extensions for AI workloads:
+  * [pgvectorscale](https://github.com/timescale/pgvectorscale/) - powerful vector index/search building on pgvector
+  * [pgai](https://github.com/timescale/pgai) - makes working with LLMs directly from SQL possible and easy
+
 ### Hasura DDN
 
 The [Hasura Data Delivery Network (DDN)](https://hasura.io/ddn) is an open-sourced method for developing composite APIs. You can create a GraphQL

@@ -18,7 +18,7 @@ Bring AI models closer to your PostgreSQL data
 ![John Pruitt](./images/jgpruitt.jpeg)
 
 - [jgpruitt@gmail.com](mailto:jgpruitt@gmail.com)
-- [www.linkedin.com/in/jgpruitt](www.linkedin.com/in/jgpruitt)
+- [www.linkedin.com/in/jgpruitt](https://www.linkedin.com/in/jgpruitt)
 - Birmingham Native
 - Staff Software Engineer at [Timescale](https://www.timescale.com/) currently working on AI products
   - pgai
@@ -32,19 +32,6 @@ Bring AI models closer to your PostgreSQL data
   - Engineering Manager
   - Business Owner
   - [Promscale](https://github.com/timescale/promscale) and its [extension](https://github.com/timescale/promscale_extension)
-
-### Timescale
-
-**[Timescale](https://www.timescale.com/) is Postgres made powerful**
-
-3.2M+ Timescale databases power apps across IoT, sensors, AI, dev tools, crypto,
-and finance—all built on PostgreSQL. We use PostgreSQL for everything; we built
-our cloud so you can too
-
-- [Cloud-hosted Postgres/Timescaledb](https://console.cloud.timescale.com/login)
-- [timescaledb](https://github.com/timescale/timescaledb) - Postgres for timeseries, events, and analytics
-- [pgai](https://github.com/timescale/pgai) - Postgres extension for interacting with LLMs directly from SQL
-- [pgvectorscale](https://github.com/timescale/pgvectorscale) - A complement to pgvector for high performance, cost-efficient vector search on large workloads.
 
 ### What is pgai?
 
