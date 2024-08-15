@@ -38,10 +38,6 @@ Bring AI models closer to your PostgreSQL data
 - An open-source postgres extension
 - Written (by me!) in SQL, Python, and plpython
 - Allows you to use LLM models directly from your postgres database via SQL
-- Build RAG, semantic search, and AI Agents with suite of PostgreSQL extensions for AI: pgvector, pgvectorscale and pgai.
-- Removes operational complexity of managing a separate vector database.
-- pgvector + pgvectorscale: Fast vector search at 100M+ vector scale, with time and metadata filter capabilities
-- Better Dev Experience: Multiple data type support, SQL query language, and PostgreSQL ecosystem.
 - Supports:
   - OpenAI
   - Ollama
@@ -68,6 +64,15 @@ One database system for your AI application
 Tutorials, guides and explainers
 https://www.timescale.com/blog/tag/ai/
 https://www.timescale.com/ai
+
+#### pgvectorscale
+
+- An open-source postgres extension providing an advanced vector index
+- pgvector + pgvectorscale: Fast vector search at 100M+ vector scale, with time and metadata filter capabilities
+- Better Dev Experience: Multiple data type support, SQL query language, and PostgreSQL ecosystem.
+- Build RAG, semantic search, and AI Agents
+- Removes operational complexity of managing a separate vector database
+- I have done a lot of benchmarking for this extension
 
 ## Demo!
 
